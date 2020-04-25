@@ -79,7 +79,7 @@
 }
 #niveles .row .cuadro{
   height: 100%;
-  background: linear-gradient(138.5deg, #138 50%, #137 50%);
+  background: linear-gradient(138.5deg, #0088bb 50%, #137 50%);
   color: white;
   text-transform: uppercase;
   text-align: center;
