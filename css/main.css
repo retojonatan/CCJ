@@ -60,6 +60,15 @@ body{
 #carrusel .slick-dotted.slick-slider{
   margin-bottom: 1px;
 }
+#campus-fhd{
+  display: block;
+}
+#campus-hd{
+  display: none;
+}
+#campus{
+  display: none;
+}
 /* MENU BTN */
 #menu-btn{
   height: 6vh;
@@ -346,6 +355,15 @@ body{
   #navbar .pr-3{
     padding-right: 0!important;
   }
+  #campus-fhd{
+    display: none;
+  }
+  #campus-hd{
+    display: block;
+  }
+  #campus{
+    display: none;
+  }
   .border-right{
     border: none!important;
   }
@@ -445,6 +463,15 @@ body{
   }
   #img-landing .landing-img{
     height: 35vh;
+  }
+  #campus-fhd{
+    display: none;
+  }
+  #campus-hd{
+    display: none;
+  }
+  #campus{
+    display: block;
   }
   #data{
     padding-bottom: 2rem!important;
