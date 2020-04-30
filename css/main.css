@@ -202,6 +202,12 @@ body{
   border-radius: 0;
   color: #fff;
 }
+#niveles .col{
+  padding: 0;
+  margin: 0;
+  border: 3px solid white;
+  height: 19vw;
+}
 #niveles .c-evento{
   background-image: url(../img/c-evento.jpg)!important;
   background-size: cover!important;
@@ -257,51 +263,46 @@ body{
   background-position: center!important;  
 }
 
-/* CONTACTO */
-#contacto .contacto-row{
-  margin: 30px 0 0 0 !important;
-  padding: 0;
-  background-color: #138;
-}
-#contacto .contacto-geo{
-  padding-left: 5rem;
-  color: #fafafa;
-  line-height: 30px;
-}
-#contacto .contacto-geo p{
-  color: #ddd;
-}
-#contacto .contacto-mapa{
-  padding: 0 !important;
-  margin: 0 !important;
-  margin-bottom: -6px!important;
-}
-#contacto .telefono-row{
-  margin: 0;
-}
-#contacto .telefonos{
-  padding: 0 50px;
-}
-#contacto .telefonos a{
-  color: #138;
-}
-#contacto .como-llegar{
-  background-color: #08b;
-  color: #fff;
-  padding: 0 50px;
-}
-#contacto .como-llegar .borde{
-  border-left: 2px solid #ddd;
-}
+/* CONTACT */
+
 #contacto .mail-row{
-  background: #138;
+  background: #333;
   color: #fff;
   padding: 0 !important;
   margin: 0 !important;
   margin-bottom: 5vh!important;
 }
+#contact-msj {
+  border-right: 2px solid #ccc;
+}
+#contact-datos .unite {
+  background-color: rgb(90,200,250);;
+  margin-right: 20px;
+  padding: 15px 5px 0 5px;
+  border-radius: 8px;
+}
+#contact .btn-info{
+  background-color: rgb(90,200,250);;
+}
+#contact-datos .unite h5 {
+  color: #fff;
+  font-weight: 600;
+}
+#contact-datos .unite a {
+  border-top: 1px solid #fff;
+  display: block;
+  color: #fff;
+  font-size: 1.1rem;
+}
+#contact h3{
+  font-weight: bolder;
+  color: #444;
+}
 #contacto .mail-row a{
   color: #ccc;
+}
+#contact a{
+  color: #000;
 }
 /* FOOTER */
 #footer {
@@ -350,6 +351,21 @@ body{
 #footer .dropdown-item:hover{
   color: #000;
 }
+#contact {  
+  padding: 5rem;
+  background-image: url(/img/car/1.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+#contact .border-t {
+  margin: 0;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+#contact .icon{
+  color: rgb(90,200,250);
+  font-size: 40px;
+}
 #contacto .iconos {
   height: 150px;
 }
@@ -362,7 +378,6 @@ body{
 .card{
   display: inline-block;
 }
-
 #data{
   background-color: #08b;
 }
@@ -393,12 +408,6 @@ body{
   }
 }
 
-#niveles .col{
-  padding: 0;
-  margin: 0;
-  border: 3px solid white;
-  height: 19vw;
-}
 @media only screen and (max-width:1280px){
   #navbar .nav-link{
     font-size: 10px;
@@ -420,20 +429,6 @@ body{
   }
   #contacto span{
     padding: .5rem !important
-  }
-  #contacto .contacto-geo{
-    padding-left: 35px;
-    line-height: 26px;
-  }
-  #contacto .contacto-geo h4{
-    font-size: 1.3rem!important;
-  }
-  #contacto .contacto-mapa{
-    height: 330px;
-  }
-  #contacto .telefonos,
-  #contacto .como-llegar{
-    padding: 0 35px
   }
   #data .card p{
     font-size: .9rem!important;
@@ -548,20 +543,6 @@ body{
   #contacto span{
     padding: .25rem !important
   }
-  #contacto .contacto-geo{
-    padding-left: 15px;
-    line-height: 24px;
-  }
-  #contacto .contacto-geo h4{
-    font-size: 1.15rem!important;
-  }
-  #contacto .contacto-mapa{
-    height: 270px;
-  }
-  #contacto .telefonos,
-  #contacto .como-llegar{
-    padding: 0 15px
-  }
   #footer{
     position: relative;
     height: auto;
@@ -623,17 +604,6 @@ body{
   }
   #data .card img{
     display: none;
-  }
-  #contacto .contacto-geo{
-    padding: 30px 35px;
-  }
-  #contacto .contacto-mapa iframe{
-    height: 290px;
-    padding-bottom: 25px;
-  }
-  #contacto .telefonos,
-  #contacto .como-llegar {
-    padding: 30px;
   }
   #contacto .borde{
     border-left: 0!important;
