@@ -191,6 +191,26 @@
                   <div class="form-group">
                     <label for="password" class="text-info">Contraseña:</label><br>
                     <input type="password" name="password" id="password" class="form-control">
+                    <script>
+                        function LoguearUsuarioGoogle() {
+                          var user = document.getElementById("username").value;
+                          var password = document.getElementById("password").value;
+
+                          var urlCompleta = 'http://localhost:63426/OperacionUsuarios/LoguearUsuario?username=0&password=1';
+                          
+                          var request = $.ajax({
+                              url: urlCompleta, 
+                              type: 'GET', 
+                              dataType: 'json'
+                          })
+                          request.done(function (response) {
+                             
+                          })  
+                          request.fail(function (jqXHR, textStatus) {
+                              alert("Hubo un error: " + textStatus);
+                          })
+                        }
+                    </script>  
                   </div>
                   <div class="form-group">
                     <input type="submit" name="submit" class="btn btn-info btn-block" value="Ingresar">
