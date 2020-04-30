@@ -8,7 +8,7 @@ namespace ApiCuentasGoogle.Controllers
     {
         [HttpGet]
         [Route("LoguearUsuario")]
-        public bool LoguearUsuario(string username, string password)
+        public string LoguearUsuario(string username, string password)
         {
             UsuariosData dataUser = new UsuariosData();
 

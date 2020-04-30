@@ -199,8 +199,8 @@
     <Content Include="css\main.css" />
     <Content Include="CuentasGoogleEntityFramework.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>CuentasGoogleEntityFramework.Context.cs</LastGenOutput>
       <DependentUpon>CuentasGoogleEntityFramework.edmx</DependentUpon>
+      <LastGenOutput>CuentasGoogleEntityFramework.Context.cs</LastGenOutput>
     </Content>
     <Content Include="CuentasGoogleEntityFramework.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
@@ -306,6 +306,10 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
+    <Content Include="img\favicon\manifest.json" />
+    <Content Include="fonts\BebasNeue-Regular.otf" />
+    <Content Include="fonts\MyriadPro-Bold.otf" />
+    <Content Include="fonts\MyriadPro-Regular.otf" />
     <EntityDeploy Include="CuentasGoogleEntityFramework.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>CuentasGoogleEntityFramework.Designer.cs</LastGenOutput>
@@ -313,10 +317,6 @@
     <Content Include="CuentasGoogleEntityFramework.edmx.diagram">
       <DependentUpon>CuentasGoogleEntityFramework.edmx</DependentUpon>
     </Content>
-    <Content Include="img\favicon\manifest.json" />
-    <Content Include="fonts\BebasNeue-Regular.otf" />
-    <Content Include="fonts\MyriadPro-Bold.otf" />
-    <Content Include="fonts\MyriadPro-Regular.otf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />

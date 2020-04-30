@@ -13,10 +13,10 @@ namespace ApiCuentasGoogle
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CuentasGoogleEntityFramework : DbContext
+    public partial class CuentasGoogleEntity : DbContext
     {
-        public CuentasGoogleEntityFramework()
-            : base("name=CuentasGoogleEntityFramework")
+        public CuentasGoogleEntity()
+            : base("name=CuentasGoogleEntity")
         {
         }
     

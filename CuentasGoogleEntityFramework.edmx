@@ -10,33 +10,16 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="FirstName" Type="varchar" MaxLength="40" />
-          <Property Name="LastName" Type="varchar" MaxLength="40" />
-          <Property Name="EmailAddress" Type="varchar" MaxLength="40" />
-          <Property Name="Password" Type="varchar" MaxLength="40" />
-          <Property Name="PasswordHashFunction" Type="varchar" MaxLength="40" />
-          <Property Name="OrgUnitPath" Type="varchar" MaxLength="40" />
-          <Property Name="NewPrimaryEmail" Type="varchar" MaxLength="40" />
-          <Property Name="RecoveryEmail" Type="varchar" MaxLength="40" />
-          <Property Name="HomeSecondaryEmail" Type="varchar" MaxLength="40" />
-          <Property Name="WorkSecondaryEmail" Type="varchar" MaxLength="40" />
-          <Property Name="RecoveryPhone" Type="varchar" MaxLength="40" />
-          <Property Name="WorkPhone" Type="varchar" MaxLength="40" />
-          <Property Name="HomePhone" Type="varchar" MaxLength="40" />
-          <Property Name="MobilePhone" Type="varchar" MaxLength="40" />
-          <Property Name="WorkAddress" Type="varchar" MaxLength="40" />
-          <Property Name="HomeAddress" Type="varchar" MaxLength="40" />
-          <Property Name="EmployeeID" Type="varchar" MaxLength="40" />
-          <Property Name="EmployeeType" Type="varchar" MaxLength="40" />
-          <Property Name="EmployeeTitle" Type="varchar" MaxLength="40" />
-          <Property Name="ManagerEmail" Type="varchar" MaxLength="40" />
-          <Property Name="Department" Type="varchar" MaxLength="40" />
-          <Property Name="CostCenter" Type="varchar" MaxLength="40" />
-          <Property Name="BuildingID" Type="varchar" MaxLength="40" />
-          <Property Name="FloorName" Type="varchar" MaxLength="40" />
-          <Property Name="FloorSection" Type="varchar" MaxLength="40" />
-          <Property Name="ChangePasswordAtNextSignIn" Type="varchar" MaxLength="40" />
-          <Property Name="NewStatus" Type="varchar" MaxLength="40" />
+          <Property Name="FirstName" Type="nvarchar" MaxLength="100" />
+          <Property Name="LastName" Type="nvarchar" MaxLength="100" />
+          <Property Name="EmailAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="Password" Type="nvarchar" MaxLength="100" />
+          <Property Name="MobilePhone" Type="nvarchar" MaxLength="100" />
+          <Property Name="HomeAddress" Type="nvarchar" MaxLength="100" />
+          <Property Name="EmployeeID" Type="nvarchar" MaxLength="100" />
+          <Property Name="EmployeeType" Type="nvarchar" MaxLength="100" />
+          <Property Name="EmployeeTitle" Type="nvarchar" MaxLength="100" />
+          <Property Name="Department" Type="nvarchar" MaxLength="100" />
         </EntityType>
         <EntityContainer Name="CuentasGoogleEFStoreContainer">
           <EntitySet Name="UsuariosGoogle" EntityType="Self.UsuariosGoogle" Schema="dbo" store:Type="Tables" />
@@ -51,35 +34,18 @@
             <PropertyRef Name="Id" />
           </Key>
           <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="FirstName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="LastName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="EmailAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="Password" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="PasswordHashFunction" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="OrgUnitPath" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="NewPrimaryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="RecoveryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="HomeSecondaryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="WorkSecondaryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="RecoveryPhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="WorkPhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="HomePhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="MobilePhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="WorkAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="HomeAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="EmployeeID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="EmployeeType" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="EmployeeTitle" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="ManagerEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="Department" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="CostCenter" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="BuildingID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="FloorName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="FloorSection" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="ChangePasswordAtNextSignIn" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
-          <Property Name="NewStatus" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="FirstName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="LastName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EmailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="MobilePhone" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="HomeAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EmployeeID" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EmployeeType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="EmployeeTitle" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+          <Property Name="Department" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
         </EntityType>
-        <EntityContainer Name="CuentasGoogleEntityFramework" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CuentasGoogleEntity" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="UsuariosGoogle" EntityType="Self.UsuariosGoogle" />
         </EntityContainer>
       </Schema>
@@ -87,7 +53,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CuentasGoogleEFStoreContainer" CdmEntityContainer="CuentasGoogleEntityFramework">
+        <EntityContainerMapping StorageEntityContainer="CuentasGoogleEFStoreContainer" CdmEntityContainer="CuentasGoogleEntity">
           <EntitySetMapping Name="UsuariosGoogle">
             <EntityTypeMapping TypeName="CuentasGoogleEF.UsuariosGoogle">
               <MappingFragment StoreEntitySet="UsuariosGoogle">
@@ -96,29 +62,12 @@
                 <ScalarProperty Name="LastName" ColumnName="LastName" />
                 <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
                 <ScalarProperty Name="Password" ColumnName="Password" />
-                <ScalarProperty Name="PasswordHashFunction" ColumnName="PasswordHashFunction" />
-                <ScalarProperty Name="OrgUnitPath" ColumnName="OrgUnitPath" />
-                <ScalarProperty Name="NewPrimaryEmail" ColumnName="NewPrimaryEmail" />
-                <ScalarProperty Name="RecoveryEmail" ColumnName="RecoveryEmail" />
-                <ScalarProperty Name="HomeSecondaryEmail" ColumnName="HomeSecondaryEmail" />
-                <ScalarProperty Name="WorkSecondaryEmail" ColumnName="WorkSecondaryEmail" />
-                <ScalarProperty Name="RecoveryPhone" ColumnName="RecoveryPhone" />
-                <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
-                <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
                 <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
-                <ScalarProperty Name="WorkAddress" ColumnName="WorkAddress" />
                 <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
                 <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
                 <ScalarProperty Name="EmployeeType" ColumnName="EmployeeType" />
                 <ScalarProperty Name="EmployeeTitle" ColumnName="EmployeeTitle" />
-                <ScalarProperty Name="ManagerEmail" ColumnName="ManagerEmail" />
                 <ScalarProperty Name="Department" ColumnName="Department" />
-                <ScalarProperty Name="CostCenter" ColumnName="CostCenter" />
-                <ScalarProperty Name="BuildingID" ColumnName="BuildingID" />
-                <ScalarProperty Name="FloorName" ColumnName="FloorName" />
-                <ScalarProperty Name="FloorSection" ColumnName="FloorSection" />
-                <ScalarProperty Name="ChangePasswordAtNextSignIn" ColumnName="ChangePasswordAtNextSignIn" />
-                <ScalarProperty Name="NewStatus" ColumnName="NewStatus" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

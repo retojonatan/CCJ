@@ -7,22 +7,22 @@ namespace ApiCuentasGoogle.Data
 {
     public class UsuariosData
     {
-        public bool BuscarUsuario(string username, string password)
+        public string BuscarUsuario(string username, string password)
         {
-            using (var context = new CuentasGoogleEntityFramework())
+            using (var context = new CuentasGoogleEntity())
             {
                 var data = context.UsuariosGoogle;
-                bool encontrado = false;
+                string tipo = "";
 
                 foreach (var value in data)
                 {
                     if (value.EmailAddress == username && value.Password == password)
                     {
-                        encontrado = true;
+                        tipo = value.Department;
                     }
                 }
 
-                return encontrado;
+                return tipo;
             }
         }
     }

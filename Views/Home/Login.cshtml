@@ -172,20 +172,20 @@
                                         <!-- OCULTO EL LOGIN DE GOOGLE DE MOMENTO -->
                                         <div class="g-signin2 d-none" data-onsuccess="onSignIn" data-theme="dark"></div>
                                         <script>
-                        function onSignIn(googleUser) {
-                          // Useful data for your client-side scripts:
-                          var profile = googleUser.getBasicProfile();
-                          console.log("ID: " + profile.getId()); // Don't send this directly to your server!
-                          console.log('Full Name: ' + profile.getName());
-                          console.log('Given Name: ' + profile.getGivenName());
-                          console.log('Family Name: ' + profile.getFamilyName());
-                          console.log("Image URL: " + profile.getImageUrl());
-                          console.log("Email: " + profile.getEmail());
+                                            function onSignIn(googleUser) {
+                                                // Useful data for your client-side scripts:
+                                                var profile = googleUser.getBasicProfile();
+                                                console.log("ID: " + profile.getId()); // Don't send this directly to your server!
+                                                console.log('Full Name: ' + profile.getName());
+                                                console.log('Given Name: ' + profile.getGivenName());
+                                                console.log('Family Name: ' + profile.getFamilyName());
+                                                console.log("Image URL: " + profile.getImageUrl());
+                                                console.log("Email: " + profile.getEmail());
 
-                          // The ID token you need to pass to your backend:
-                          var id_token = googleUser.getAuthResponse().id_token;
-                          console.log("ID Token: " + id_token);
-                        }
+                                                // The ID token you need to pass to your backend:
+                                                var id_token = googleUser.getAuthResponse().id_token;
+                                                console.log("ID Token: " + id_token);
+                                            }
                                         </script>
                                     </body>
 
@@ -196,29 +196,51 @@
                             <div class="form-group">
                                 <label for="password" class="text-info">Contraseña:</label><br>
                                 <input type="password" name="password" id="password" class="form-control">
-                                <script>
-                        function LoguearUsuarioGoogle() {
-                          var user = document.getElementById("username").value;
-                          var password = document.getElementById("password").value;
-
-                          var urlCompleta = 'http://localhost:63426/OperacionUsuarios/LoguearUsuario?username=0&password=1';
-
-                          var request = $.ajax({
-                              url: urlCompleta,
-                              type: 'GET',
-                              dataType: 'json'
-                          })
-                          request.done(function (response) {
-
-                          })
-                          request.fail(function (jqXHR, textStatus) {
-                              alert("Hubo un error: " + textStatus);
-                          })
-                        }
-                                </script>
                             </div>
                             <div class="form-group">
-                                <input type="submit" name="submit" class="btn btn-info btn-block" value="Ingresar">
+                                <input type="button" class="btn btn-info btn-block" onclick="LoguearUsuarioGoogle()" value="Ingresar" />
+                                <div class="mensaje-error col-md-12">
+                                    <span id="ErrorLogueo"></span>
+                                </div>
+                            </div>
+                                <script>
+                                    function validarURL(url, user, password) {
+                                        userAgregado = url.replace(/[8]/gi, user);
+                                        urlcompleta = userAgregado.replace(/[9]/gi, password);
+
+                                        return urlcompleta;
+                                    }
+                                    function LoguearUsuarioGoogle() {
+                                        var user = document.getElementById("username").value;
+                                        var password = document.getElementById("password").value;
+
+                                        var url = validarURL('http://ccj.switchit.com.ar//OperacionUsuarios/LoguearUsuario?username=8&password=9', user, password);
+
+                                        var request = $.ajax({
+                                            url: url,
+                                            type: 'GET',
+                                            dataType: 'json'
+                                        })
+                                        request.done(function (response) {
+                                            if (response == "Incial") {
+                                                window.location.href = '/Home/Inicial';
+                                            }
+                                            if (response == "Primaria") {
+                                                window.location.href = '/Home/Primaria';
+                                            }
+                                            if (response == "Secundaria") {
+                                                window.location.href = '/Home/Secundaria';
+                                            }
+
+                                            if(response == "" || response == "Quintino") {
+                                                document.getElementById("ErrorLogueo").innerHTML = "Los datos ingresados son invalidos";
+                                            }
+                                        })
+                                        request.fail(function (jqXHR, textStatus) {
+                                            alert("Hubo un error: " + textStatus);
+                                        })
+                                    }
+                                </script>
                             </div>
                             <a class="btn btn-dark btn-block" href="./Dashboard/starter.html">INGRESO AL DASHBOARD MOMENTANEO</a>
                         </form>
@@ -229,7 +251,8 @@
     </div>
 </section>
 <!--<script src="https://apis.google.com/js/platform.js" async defer></script>-->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+@*<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>*@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <script type="text/javascript" src="/slick/slick.min.js"></script>
