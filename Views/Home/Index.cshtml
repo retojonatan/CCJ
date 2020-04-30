@@ -1,9 +1,9 @@
 ﻿<!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Gartenstadt Schule</title>
+    <title>Gartenstadt Schules</title>
     <!-- FAVICON -->
     <link rel="apple-touch-icon" sizes="57x57" href="./img/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="./img/favicon/apple-icon-60x60.png">
@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="./img/favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="./img/favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="./img/favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="./img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./img/favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="./img/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
@@ -24,345 +24,296 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" type="text/css" href="./slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css"/>
-  </head>
-  <body>
+    <link rel="stylesheet" type="text/css" href="./slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./slick/slick-theme.css" />
+</head>
+<body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-gart fixed-top py-0" id="navbar">
-      <a class="navbar-brand" href="./index.html"><img class="img-brand" src="./img/logo-01.png" alt="logo Gartenstadt Schule"></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+        <a class="navbar-brand" href="./index.html"><img class="img-brand" src="./img/logo-01.png" alt="logo Gartenstadt Schule"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto border-right">
-          <li class="nav-item active">
-            <a class="nav-link nav-link-mobile" href="./index.html">Classroom</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-mobile" href="./index.html">COVID-19</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-mobile" href="./index.html">Inicial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-mobile" href="./index.html">Primaria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-mobile" href="./index.html">Secundaria</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-mobile" href="./index.html">Administración</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link nav-link-mobile" href="./index.html">inscripciones</a>
-          </li>
-          <li class="nav-item pr-3">
-            <a class="nav-link" href="./login.html">Login</a>
-          </li>
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html">Colegio Ciudad Jardin</a>
-          </li>
-        </ul>
-        <img class="img-lang" src="./img/iconos/iconos-13.png" alt="">
-      </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto border-right">
+                <li class="nav-item active">
+                    <a class="nav-link nav-link-mobile" href="@Url.Action("Index", "Home")">Classroom</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mobile" href="@Url.Action("Index", "Home")">COVID-19</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mobile" href="@Url.Action("Index", "Home")">Inicial</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mobile" href="@Url.Action("Index", "Home")">Primaria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mobile" href="@Url.Action("Index", "Home")">Secundaria</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mobile" href="@Url.Action("Index", "Home")">Administración</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-mobile" href="@Url.Action("Index", "Home")">inscripciones</a>
+                </li>
+                <li class="nav-item pr-3">
+                    <a class="nav-link" href="@Url.Action("Login", "Home")">Login</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="@Url.Action("Index", "Home")">Colegio Ciudad Jardin</a>
+                </li>
+            </ul>
+            <img class="img-lang" src="./img/iconos/iconos-13.png" alt="">
+        </div>
     </nav>
     <section id="carrusel">
-      <div class="carru" id="campus-fhd">
-        <div ><a href="#"><img src="./img/car/campus-fhd.jpg" alt=""></a></div>
-        <div><a href="#"><img src="./img/car/1.jpg" alt=""></a></div>
-        <div><a href="#"><img src="./img/car/2.jpg" alt=""></a></div>
-        <div><a href="#"><img src="./img/car/3.jpg" alt=""></a></div>
-      </div>
-      <div class="carru" id="campus-hd">
-        <div ><a href="#"><img src="./img/car/campus-hd.jpg" alt=""></a></div>
-        <div><a href="#"><img src="./img/car/1.jpg" alt=""></a></div>
-        <div><a href="#"><img src="./img/car/2.jpg" alt=""></a></div>
-        <div><a href="#"><img src="./img/car/3.jpg" alt=""></a></div>
-      </div>
-      <div class="carru" id="campus">
-        <div><a href="#"><img src="./img/car/campus.jpg" alt=""></a></div>
-        <div><a href="#"><img src="./img/car/1.jpg" alt=""></a></div>
-        <div><a href="#"><img src="./img/car/2.jpg" alt=""></a></div>
-        <div><a href="#"><img src="./img/car/3.jpg" alt=""></a></div>
-      </div>
-    </section>    
+        <div class="carru" id="campus-fhd">
+            <div><a href="#"><img src="./img/car/campus-fhd.jpg" alt=""></a></div>
+            <div><a href="#"><img src="./img/car/1.jpg" alt=""></a></div>
+            <div><a href="#"><img src="./img/car/2.jpg" alt=""></a></div>
+            <div><a href="#"><img src="./img/car/3.jpg" alt=""></a></div>
+        </div>
+        <div class="carru" id="campus-hd">
+            <div><a href="#"><img src="./img/car/campus-hd.jpg" alt=""></a></div>
+            <div><a href="#"><img src="./img/car/1.jpg" alt=""></a></div>
+            <div><a href="#"><img src="./img/car/2.jpg" alt=""></a></div>
+            <div><a href="#"><img src="./img/car/3.jpg" alt=""></a></div>
+        </div>
+        <div class="carru" id="campus">
+            <div><a href="#"><img src="./img/car/campus.jpg" alt=""></a></div>
+            <div><a href="#"><img src="./img/car/1.jpg" alt=""></a></div>
+            <div><a href="#"><img src="./img/car/2.jpg" alt=""></a></div>
+            <div><a href="#"><img src="./img/car/3.jpg" alt=""></a></div>
+        </div>
+    </section>
     <section id="menu-btn">
-      <div class="row h-100">
-        <div class="col">
-          <a href="./institucional.html" class="btn btn-block btn-primary rounded-0 h-100">El Colegio</a>
+        <div class="row h-100">
+            <div class="col">
+                <a  href="@Url.Action("Institucional", "Home")" class="btn btn-block btn-primary rounded-0 h-100">El Colegio</a>
+            </div>
+            <div class="col">
+                <a  href="@Url.Action("Primaria", "Home")" class="btn btn-block btn-light rounded-0 h-100">Niveles</a>
+            </div>
+            <div class="col">
+                <a  href="@Url.Action("Secundaria", "Home")" class="btn btn-block btn-secondary rounded-0 h-100">Secundaria</a>
+            </div>
+            <div class="col">
+                <a href="#" class="btn btn-block btn-warning rounded-0 h-100">Gabinete</a>
+            </div>
+            <div class="col">
+                <a href="@Url.Action("Contacto", "Home")" class="btn btn-block btn-danger rounded-0 h-100">Administración</a>
+            </div>
+            <div class="col">
+                <a  href="@Url.Action("Contacto", "Home")" class="btn btn-block btn-dark rounded-0 h-100">Admisión</a>
+            </div>
         </div>
-        <div class="col">
-          <a href="./primaria.html" class="btn btn-block btn-light rounded-0 h-100">Niveles</a>
-        </div>
-        <div class="col">
-          <a href="./secundaria.html" class="btn btn-block btn-secondary rounded-0 h-100">Secundaria</a>
-        </div>
-        <div class="col">
-          <a href="#" class="btn btn-block btn-warning rounded-0 h-100">Gabinete</a>
-        </div>
-        <div class="col">
-          <a href="./contacto.html" class="btn btn-block btn-danger rounded-0 h-100">Administración</a>
-        </div>
-        <div class="col">
-          <a href="./contacto.html" class="btn btn-block btn-dark rounded-0 h-100">Admisión</a>
-        </div>
-      </div>
     </section>
-    
-    <section id="niveles">
-      <div class="row">
-        <div class="col">
-          <a href="./inicial.html">
-            <div class="cuadro c-azul">
-              <img class="icono" src="./img/iconos/iconos-01.png" alt="">
-              <h5>Exámenes<span class="d-block"></span> internacionales</h5>
-            </div>
-          </a>
-        </div>        
-        <div class="col content">
-          <a href="./primaria.html">
-            <div class="cuadro c-aulas">
-              <h5>Aulas<span class="d-block"></span> Interactivas</h5>
-            </div>
-            <div class="content-overlay overlay-yellow"></div>
-            <div class="content-details fadeIn-top">
-              <h3 class="content-title"> Aulas Interactivas</h3>
-              <p class="content-text">El colegio cuenta con aulas equipadas para el desarrollo de las clases de manera Interactiva</p>
-            </div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="https://classroom.google.com/u/0/h?hl=es">
-            <div class="cuadro c-verde">
-              <img class="icono" src="./img/iconos/iconos-08.png" alt="">
-              <h5>CLASSROOM</h5>
-            </div>
-          </a>
-        </div>  
-        <div class="col content">
-          <a href="./contacto.html">
-            <div class="cuadro c-intercambio">
-              <h5>Alumnos <span class="d-block"></span> Intercambio</h5>
-            </div>
-            <div class="content-overlay overlay-yellow"></div>
-            <div class="content-details fadeIn-top">
-              <h3 class="content-title">Intercambio</h3>
-              <p class="content-text">El colegio cuenta con programas de intercambio para los alumnos</p>
-            </div>
-          </a>
-        </div>
-        <div class="col">
-          <a href="./institucional.html">
-            <div class="cuadro c-violeta">
-              <img class="icono" src="./img/iconos/iconos-06.png" alt="">
-              <h5>INSTITUCIÓN</h5>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="row pt-5">
-        <div class="col content">
-          <a href="./arte.html">
-            <div class="cuadro c-musica">
-              <h5>Música</h5>
-            </div>
-            <div class="content-overlay overlay-yellow"></div>
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title">Música</h3>
-              <p class="content-text">El colegio cuenta con clases de música y realiza concerts</p>
-            </div>
-          </a>
-        </div>        
-        <div class="col">
-          <a href="./english.html">
-            <div class="cuadro c-rojo">
-              <img class="icono" src="./img/iconos/iconos-09.png" alt="">
-              <h5>ENGLISH</h5>
-            </div>
-          </a>
-        </div>
-        <div class="col content">
-          <a href="./ed-fisica.html">
-            <div class="cuadro c-fisica">
-              <h5>Educación<span class="d-block"></span> Física</h5>
-            </div>
-            <div class="content-overlay overlay-yellow"></div>
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title"> Educación Física</h3>
-              <p class="content-text">Los chicos necesitan hacer ejercicio</p>
-            </div>
-          </a>
-        </div>      
-        <div class="col">
-          <a href="./deutsch.html">
-            <div class="cuadro c-amarillo">
-              <img class="icono" src="./img/iconos/iconos-10.png" alt="">
-              <h5>DEUTSCH</h5>
-            </div>
-          </a>
-        </div>
-        <div class="col content">
-          <a href="./secundaria.html">
-            <div class="cuadro c-evento">              
-              <h5>Eventos</h5>
-            </div>
-            <div class="content-overlay overlay-yellow"></div>
-            <div class="content-details fadeIn-bottom">
-              <h3 class="content-title"> Eventos</h3>
-              <p class="content-text">El colegio realiza eventos</p>
-            </div>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="afiliados">
 
-    </section>
-    <section id="contact">
-      <div class="row py-3 border-t bg-white">
-        <div class="col-sm-8 p-5" id="contact-msj">
-          <h3 class="pb-4">EN QUE TE PODEMOS AYUDAR</h3>
-          <form action="">
-            <div class="form-group">
-              <label for="Nombre">NOMBRE</label>
-              <input class="form-control" id="Nombre" maxlength="50" name="Nombre" type="text" value="">
-              <span class="field-validation-valid" data-valmsg-for="Nombre" data-valmsg-replace="true"
-                style="color:red;"></span>
+    <section id="niveles">
+        <div class="row">
+            <div class="col">
+                <a href="./inicial.html">
+                    <div class="cuadro c-azul">
+                        <img class="icono" src="./img/iconos/iconos-01.png" alt="">
+                        <h5>Exámenes<span class="d-block"></span> internacionales</h5>
+                    </div>
+                </a>
             </div>
-            <div class="form-group">
-              <label for="Email">EMAIL</label>
-              <input class="form-control" id="Email" maxlength="50" name="Email" type="text" value="">
-              <span class="field-validation-valid" data-valmsg-for="Email" data-valmsg-replace="true" id="validacionEmail"
-                style="color:red;"></span>
+            <div class="col content">
+                <a href="./primaria.html">
+                    <div class="cuadro c-aulas">
+                        <h5>Aulas<span class="d-block"></span> Interactivas</h5>
+                    </div>
+                    <div class="content-overlay overlay-yellow"></div>
+                    <div class="content-details fadeIn-top">
+                        <h3 class="content-title"> Aulas Interactivas</h3>
+                        <p class="content-text">El colegio cuenta con aulas equipadas para el desarrollo de las clases de manera Interactiva</p>
+                    </div>
+                </a>
             </div>
-            <div class="form-group">
-              <label for="Mensaje">MENSAJE</label>
-              <textarea class="form-control" cols="20" id="Mensaje" maxlength="300" name="Mensaje" rows="6" type="text"></textarea>
-              <span class="field-validation-valid" data-valmsg-for="Mensaje" data-valmsg-replace="true" style="color:red;"></span>
+            <div class="col">
+                <a href="https://classroom.google.com/u/0/h?hl=es">
+                    <div class="cuadro c-verde">
+                        <img class="icono" src="./img/iconos/iconos-08.png" alt="">
+                        <h5>CLASSROOM</h5>
+                    </div>
+                </a>
             </div>
-            <input type="submit" value="ENVIAR" class="btn btn-info px-5 mb-2" onclick="submitForm(event)" />
-          </form>
+            <div class="col content">
+                <a href="./contacto.html">
+                    <div class="cuadro c-intercambio">
+                        <h5>Alumnos <span class="d-block"></span> Intercambio</h5>
+                    </div>
+                    <div class="content-overlay overlay-yellow"></div>
+                    <div class="content-details fadeIn-top">
+                        <h3 class="content-title">Intercambio</h3>
+                        <p class="content-text">El colegio cuenta con programas de intercambio para los alumnos</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col">
+                <a href="./institucional.html">
+                    <div class="cuadro c-violeta">
+                        <img class="icono" src="./img/iconos/iconos-06.png" alt="">
+                        <h5>INSTITUCIÓN</h5>
+                    </div>
+                </a>
+            </div>
         </div>
-        <div class="col-sm-4 p-5" id="contact-datos">
-          <h3 class="pb-4">CONTACTO</h3>
-          <div class="row pb-4">
-            <div class="col-xs-3 col-md-2 col-lg-1">
-              <i class="fas fa-envelope icon"></i>
+        <div class="row pt-5">
+            <div class="col content">
+                <a  href="@Url.Action("Arte", "Home")">
+                    <div class="cuadro c-musica">
+                        <h5>Música</h5>
+                    </div>
+                    <div class="content-overlay overlay-yellow"></div>
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title">Música</h3>
+                        <p class="content-text">El colegio cuenta con clases de música y realiza concerts</p>
+                    </div>
+                </a>
             </div>
-            <div class="col-xs-9 col-md-10">
-              <h5 class="pl-4 d-inline-block">EMAIL</h5>
-              <a href="mailto:" class="pl-4 d-block">info@colegiociudadjardin.edu.ar</a>
+            <div class="col">
+                <a href="@Url.Action("English", "Home")">
+                    <div class="cuadro c-rojo">
+                        <img class="icono" src="./img/iconos/iconos-09.png" alt="">
+                        <h5>ENGLISH</h5>
+                    </div>
+                </a>
             </div>
-          </div>
-          <div class="row pb-4">
-            <div class="col-xs-3 col-md-2 col-lg-1">
-              <i class="fas fa-phone icon"></i>
+            <div class="col content">
+                <a  href="@Url.Action("EdFisica", "Home")">
+                    <div class="cuadro c-fisica">
+                        <h5>Educación<span class="d-block"></span> Física</h5>
+                    </div>
+                    <div class="content-overlay overlay-yellow"></div>
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title"> Educación Física</h3>
+                        <p class="content-text">Los chicos necesitan hacer ejercicio</p>
+                    </div>
+                </a>
             </div>
-            <div class="col-xs-9 col-md-10">
-              <h5 class="pl-4 d-inline-block">TELÉFONO</h5>
-              <a href="tel:47510376" class="pl-4 d-block">4751-0376</a><a href="tel:47586245" class="pl-4 d-block">4758-6245</a>
+            <div class="col">
+                <a  href="@Url.Action("Deutsch", "Home")">
+                    <div class="cuadro c-amarillo">
+                        <img class="icono" src="./img/iconos/iconos-10.png" alt="">
+                        <h5>DEUTSCH</h5>
+                    </div>
+                </a>
             </div>
-          </div>
-          <div class="row pb-4">
-            <div class="col-xs-3 col-md-2 col-lg-1">
-              <i class="far fa-clock icon"></i>
+            <div class="col content">
+                <a  href="@Url.Action("Secundaria", "Home")">
+                    <div class="cuadro c-evento">
+                        <h5>Eventos</h5>
+                    </div>
+                    <div class="content-overlay overlay-yellow"></div>
+                    <div class="content-details fadeIn-bottom">
+                        <h3 class="content-title"> Eventos</h3>
+                        <p class="content-text">El colegio realiza eventos</p>
+                    </div>
+                </a>
             </div>
-            <div class="col-xs-9 col-md-10">
-              <h5 class="pl-4 d-inline-block">HORARIO</h5>
-              <p class="pl-4 d-block">Lunes a Viernes de 8:00 hs a 16:00hs.</p>
-            </div>
-          </div>
-          <div class="row pb-4">
-            <div class="col-xs-3 col-md-2 col-lg-1">
-              <i class="fas fa-map-marker-alt icon"></i>
-            </div>
-            <div class="col-xs-9 col-md-10">
-              <h5 class="pl-4 d-inline-block">DIRECCIÓN</h5>
-              <p class="pl-4 d-block">Aviador Matienzo 2799 (ex 509) Ciudad Jardín, Lomas del Palomar (CP 1684)</p>
-            </div>
-          </div>
-          <div class="row unite">
-            <div class="col-xs-3 col-md-2 col-lg-1">
-              <i class="fas fa-file-alt icon text-white"></i>
-            </div>
-            <div class="col-xs-9 col-md-10">
-              <h5 class="pl-4 d-inline-block">UNITE AL EQUIPO</h5>
-              <p class="pl-4 d-block"><a class="text-white" href="#">Cargá tu CV aquí</a></p>
-            </div>
-          </div>
+
+
         </div>
-      </div>
-      <div id="mapa">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.9547158585187!2d-58.55280958423742!3d-34.580012363752246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb77c39142887%3A0x353184c44a7234f5!2sMetal%C3%BArgica%20Quintino!5e0!3m2!1ses!2sar!4v1567424772363!5m2!1ses!2sar"
-          width="100%" height="350" frameborder="0"
-          style="border-bottom-left-radius: 15px; border-bottom-right-radius: 15px;" allowfullscreen=""></iframe>
-      </div>
     </section>
 
     <section id="contacto">
-      <div class="row mail-row">
-        <div class="col-sm-6">
-          <div class="row py-5">
-            <div class="col-sm-3 my-auto border-right">
-              <img class="iconos" src="./img/iconos/iconos-11.png" alt="">
+        <div class="row contacto-row">
+            <div class="col-sm-6 contacto-geo my-auto">
+                <h4 class="pb-3">Aviador Matienzo 2799 (ex 509)</h4>
+                <p>Ciudad Jardín, Lomas del Palomar (CP 1684)</p>
+                <p>Horario de atención de la administración: <br><strong>Lunes a Viernes de 8:00 hs a 16:00hs.</strong></p>
             </div>
-            <div class="col-sm-9 my-auto pl-4">
-              <h5 class="pb-3">Nuevas Familias: Admisión</h5>
-              <h5>Gabinete</h5>
-              <a href="mailto:admision@colegiociudadjardin.edu.ar">admision@colegiociudadjardin.edu.ar</a>
+            <div class="col-sm-6 contacto-mapa">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.3031614148817!2d-58.596168184688096!3d-34.59649476462319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb9ab7d032089%3A0xc6f9b32d7b8b5b91!2sColegio%20Ciudad%20Jard%C3%ADn%20%22Gartenstadt%20Schule%22!5e0!3m2!1ses!2sar!4v1569539436686!5m2!1ses!2sar" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
-          </div>
         </div>
-        <div class="col-sm-6">
-          <div class="row py-5">
-            <div class="col-sm-3 my-auto border-right">
-              <img class="iconos" src="./img/iconos/iconos-12.png" alt="">
+        <div class="row telefono-row">
+            <div class="col-sm-6 telefonos m-auto">
+                <h5 class="d-inline"><strong class="pr-3">Nuestros Teléfonos:</strong></h5> <a href="tel:+541147510376">(011) 4751-0376</a> <span class="px-3"></span> <a href="tel:+541147586245">(011) 4758-6245</a>
             </div>
-            <div class="col-sm-9 my-auto pl-4">
-              <h5 class="pb-3">Información Administrativa:</h5>
-              <h5>Administración</h5>
-              <a href="mailto:administracion@colegiociudadjardin.com.ar">administracion@colegiociudadjardin.com.ar</a>
+            <div class="col-sm-6 como-llegar my-auto">
+                <div class="row">
+                    <div class="col-sm-4 my-auto">
+                        <h5>Como llegar:</h5>
+                    </div>
+                    <div class="col-sm-8 my-4 pl-4 borde">
+                        <h5 class="pb-2">Trenes</h5>
+                        <p>Linea "Urquiza", Estación Martín Coronado. <br>Linea "San Martín", Estación Palomar.</p>
+                        <h5 class="pb-2">Colectivos</h5>
+                        <p>Lineas <strong>182, 326, 252, 320.</strong></p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-
+        <div class="row mail-row">
+            <div class="col-sm-6">
+                <div class="row py-5">
+                    <div class="col-sm-3 my-auto border-right">
+                        <img class="iconos" src="./img/iconos/iconos-11.png" alt="">
+                    </div>
+                    <div class="col-sm-9 my-auto pl-4">
+                        <h5 class="pb-3">Nuevas Familias: Admisión</h5>
+                        <h5>Gabinete</h5>
+                        <a href="mailto:admision@colegiociudadjardin.edu.ar">admision@colegiociudadjardin.edu.ar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="row py-5">
+                    <div class="col-sm-3 my-auto border-right">
+                        <img class="iconos" src="./img/iconos/iconos-12.png" alt="">
+                    </div>
+                    <div class="col-sm-9 my-auto pl-4">
+                        <h5 class="pb-3">Información Administrativa:</h5>
+                        <h5>Administración</h5>
+                        <a href="mailto:administracion@colegiociudadjardin.com.ar">administracion@colegiociudadjardin.com.ar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
     <section id="footer">
         <div class="row m-0 h-100">
-          <div class="col-sm-8 align-self-center">
-            <ul class="m-auto">
-              <li><a class="btn btn-gart" href="http://mail.google.com/a/colegiociudadjardin.edu.ar">Web Mail</a></li>
-              <li><a class="btn btn-gart" href="./login.html">Campus Virtual</a></li>
-              <li><a class="btn btn-gart" href="#">Como llegar</a></li>
-              <li>
-                <div class="btn-group dropup">
-                  <button type="button" class="btn-gart dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Alumnos
-                  </button>
-                  <div class="dropdown-menu mb-2">
-                    <a class="dropdown-item" href="./inicial.html">Inicial</a>
-                    <a class="dropdown-item" href="./primaria.html">Primaria</a>
-                    <a class="dropdown-item" href="./secundaria.html">Secundaria</a>
-                  </div>
-                </div>
-              </li>
-              <li><a class="btn btn-gart" href="#">Profesores</a></li>
-              <li><a class="btn btn-gart" href="#">Egresados</a></li>
-            </ul>            
-          </div>
-          <div class="col-sm-3 offset-sm-1 ml-auto my-auto text-right align-self-center">
-            <a href="#" class="mr-2"><i class="fab fa-facebook fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-twitter fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-instagram fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Instagram"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-linkedin fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Linkedin"></i></a>
-            <a href="#" class="mr-2"><i class="fab fa-youtube fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Youtube"></i></a>
-          </div>
+            <div class="col-sm-8 align-self-center">
+                <ul class="m-auto">
+                    <li><a class="btn btn-gart" href="http://mail.google.com/a/colegiociudadjardin.edu.ar">Web Mail</a></li>
+                    <li><a class="btn btn-gart" href="./login.html">Campus Virtual</a></li>
+                    <li><a class="btn btn-gart" href="#">Como llegar</a></li>
+                    <li>
+                        <div class="btn-group dropup">
+                            <button type="button" class="btn-gart dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Alumnos
+                            </button>
+                            <div class="dropdown-menu mb-2">
+                                <a class="dropdown-item" href="./inicial.html">Inicial</a>
+                                <a class="dropdown-item" href="./primaria.html">Primaria</a>
+                                <a class="dropdown-item" href="./secundaria.html">Secundaria</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a class="btn btn-gart" href="#">Profesores</a></li>
+                    <li><a class="btn btn-gart" href="#">Egresados</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 offset-sm-1 ml-auto my-auto text-right align-self-center">
+                <a href="#" class="mr-2" data-toggle="tooltip" data-placement="top" title="Classroom">
+                    <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                         width="23" height="23"
+                         viewBox="0 0 50 50"
+                         style=" fill:#bbbbbb;"><path d="M 6 5 C 3.800781 5 2 6.800781 2 9 L 2 41 C 2 43.199219 3.800781 45 6 45 L 44 45 C 46.199219 45 48 43.199219 48 41 L 48 9 C 48 6.800781 46.199219 5 44 5 Z M 6 7 L 44 7 C 45.117188 7 46 7.882813 46 9 L 46 41 C 46 42.117188 45.117188 43 44 43 L 6 43 C 4.882813 43 4 42.117188 4 41 L 4 9 C 4 7.882813 4.882813 7 6 7 Z M 6.8125 9 C 6.335938 9.089844 5.992188 9.511719 6 10 L 6 40 C 6 40.550781 6.449219 41 7 41 L 43 41 C 43.03125 41 43.0625 41 43.09375 41 C 43.609375 40.953125 44.003906 40.519531 44 40 L 44 10 C 44 9.449219 43.550781 9 43 9 L 7 9 C 6.96875 9 6.9375 9 6.90625 9 C 6.875 9 6.84375 9 6.8125 9 Z M 8 11 L 42 11 L 42 39 L 38 39 L 38 37 L 29 37 L 29 39 L 8 39 Z M 25 17 C 22.800781 17 21 18.800781 21 21 C 21 23.199219 22.800781 25 25 25 C 27.199219 25 29 23.199219 29 21 C 29 18.800781 27.199219 17 25 17 Z M 25 19 C 26.117188 19 27 19.882813 27 21 C 27 22.117188 26.117188 23 25 23 C 23.882813 23 23 22.117188 23 21 C 23 19.882813 23.882813 19 25 19 Z M 17 21 C 15.355469 21 14 22.355469 14 24 C 14 25.644531 15.355469 27 17 27 C 18.644531 27 20 25.644531 20 24 C 20 22.355469 18.644531 21 17 21 Z M 33 21 C 31.355469 21 30 22.355469 30 24 C 30 25.644531 31.355469 27 33 27 C 34.644531 27 36 25.644531 36 24 C 36 22.355469 34.644531 21 33 21 Z M 17 23 C 17.5625 23 18 23.4375 18 24 C 18 24.5625 17.5625 25 17 25 C 16.4375 25 16 24.5625 16 24 C 16 23.4375 16.4375 23 17 23 Z M 33 23 C 33.5625 23 34 23.4375 34 24 C 34 24.5625 33.5625 25 33 25 C 32.4375 25 32 24.5625 32 24 C 32 23.4375 32.4375 23 33 23 Z M 25 26 C 22.273438 26 20.082031 27.261719 19.03125 28 C 18.429688 27.800781 17.746094 27.65625 17 27.65625 C 14.292969 27.65625 12.34375 29.4375 12.34375 29.4375 L 12 29.75 L 12 33 L 38 33 L 38 29.75 L 37.65625 29.4375 C 37.65625 29.4375 35.707031 27.65625 33 27.65625 C 32.253906 27.65625 31.570313 27.800781 30.96875 28 C 29.917969 27.261719 27.726563 26 25 26 Z M 25 28 C 27.613281 28 29.550781 29.457031 30 29.8125 L 30 31 L 20 31 L 20 29.8125 C 20.449219 29.457031 22.386719 28 25 28 Z M 17 29.65625 C 17.347656 29.65625 17.675781 29.730469 18 29.8125 L 18 31 L 14 31 L 14 30.71875 C 14.40625 30.417969 15.507813 29.65625 17 29.65625 Z M 33 29.65625 C 34.492188 29.65625 35.59375 30.417969 36 30.71875 L 36 31 L 32 31 L 32 29.8125 C 32.324219 29.730469 32.652344 29.65625 33 29.65625 Z"></path></svg>
+                </a>
+                <a href="#" class="mr-2"><i class="fab fa-facebook fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Facebook"></i></a>
+                <a href="#" class="mr-2"><i class="fab fa-twitter fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Twitter"></i></a>
+                <a href="#" class="mr-2"><i class="fab fa-instagram fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Instagram"></i></a>
+                <a href="#" class="mr-2"><i class="fab fa-linkedin fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Linkedin"></i></a>
+                <a href="#" class="mr-2"><i class="fab fa-youtube fa-lg" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Youtube"></i></a>
+            </div>
         </div>
     </section>
-    
+
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
@@ -384,5 +335,5 @@
         $('[data-toggle="tooltip"]').tooltip()
       });
     </script>
-  </body>
+</body>
 </html>
