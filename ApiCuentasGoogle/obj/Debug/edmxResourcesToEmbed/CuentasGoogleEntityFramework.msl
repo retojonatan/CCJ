@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CuentasGoogleEFStoreContainer" CdmEntityContainer="CuentasGoogleEntityFramework">
+    <EntitySetMapping Name="UsuariosGoogle">
+      <EntityTypeMapping TypeName="CuentasGoogleEF.UsuariosGoogle">
+        <MappingFragment StoreEntitySet="UsuariosGoogle">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="PasswordHashFunction" ColumnName="PasswordHashFunction" />
+          <ScalarProperty Name="OrgUnitPath" ColumnName="OrgUnitPath" />
+          <ScalarProperty Name="NewPrimaryEmail" ColumnName="NewPrimaryEmail" />
+          <ScalarProperty Name="RecoveryEmail" ColumnName="RecoveryEmail" />
+          <ScalarProperty Name="HomeSecondaryEmail" ColumnName="HomeSecondaryEmail" />
+          <ScalarProperty Name="WorkSecondaryEmail" ColumnName="WorkSecondaryEmail" />
+          <ScalarProperty Name="RecoveryPhone" ColumnName="RecoveryPhone" />
+          <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+          <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+          <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+          <ScalarProperty Name="WorkAddress" ColumnName="WorkAddress" />
+          <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="EmployeeType" ColumnName="EmployeeType" />
+          <ScalarProperty Name="EmployeeTitle" ColumnName="EmployeeTitle" />
+          <ScalarProperty Name="ManagerEmail" ColumnName="ManagerEmail" />
+          <ScalarProperty Name="Department" ColumnName="Department" />
+          <ScalarProperty Name="CostCenter" ColumnName="CostCenter" />
+          <ScalarProperty Name="BuildingID" ColumnName="BuildingID" />
+          <ScalarProperty Name="FloorName" ColumnName="FloorName" />
+          <ScalarProperty Name="FloorSection" ColumnName="FloorSection" />
+          <ScalarProperty Name="ChangePasswordAtNextSignIn" ColumnName="ChangePasswordAtNextSignIn" />
+          <ScalarProperty Name="NewStatus" ColumnName="NewStatus" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

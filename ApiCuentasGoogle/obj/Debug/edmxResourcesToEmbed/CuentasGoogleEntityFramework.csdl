@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CuentasGoogleEF" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="UsuariosGoogle">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="LastName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Password" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="PasswordHashFunction" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="OrgUnitPath" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="NewPrimaryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="RecoveryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="HomeSecondaryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="WorkSecondaryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="RecoveryPhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="WorkPhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="HomePhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="MobilePhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="WorkAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="HomeAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeeID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeeType" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="EmployeeTitle" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ManagerEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="Department" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="CostCenter" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="BuildingID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="FloorName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="FloorSection" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="ChangePasswordAtNextSignIn" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+    <Property Name="NewStatus" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityContainer Name="CuentasGoogleEntityFramework" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="UsuariosGoogle" EntityType="Self.UsuariosGoogle" />
+  </EntityContainer>
+</Schema>

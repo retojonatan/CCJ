@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="CuentasGoogleEF.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="UsuariosGoogle">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="FirstName" Type="varchar" MaxLength="40" />
+          <Property Name="LastName" Type="varchar" MaxLength="40" />
+          <Property Name="EmailAddress" Type="varchar" MaxLength="40" />
+          <Property Name="Password" Type="varchar" MaxLength="40" />
+          <Property Name="PasswordHashFunction" Type="varchar" MaxLength="40" />
+          <Property Name="OrgUnitPath" Type="varchar" MaxLength="40" />
+          <Property Name="NewPrimaryEmail" Type="varchar" MaxLength="40" />
+          <Property Name="RecoveryEmail" Type="varchar" MaxLength="40" />
+          <Property Name="HomeSecondaryEmail" Type="varchar" MaxLength="40" />
+          <Property Name="WorkSecondaryEmail" Type="varchar" MaxLength="40" />
+          <Property Name="RecoveryPhone" Type="varchar" MaxLength="40" />
+          <Property Name="WorkPhone" Type="varchar" MaxLength="40" />
+          <Property Name="HomePhone" Type="varchar" MaxLength="40" />
+          <Property Name="MobilePhone" Type="varchar" MaxLength="40" />
+          <Property Name="WorkAddress" Type="varchar" MaxLength="40" />
+          <Property Name="HomeAddress" Type="varchar" MaxLength="40" />
+          <Property Name="EmployeeID" Type="varchar" MaxLength="40" />
+          <Property Name="EmployeeType" Type="varchar" MaxLength="40" />
+          <Property Name="EmployeeTitle" Type="varchar" MaxLength="40" />
+          <Property Name="ManagerEmail" Type="varchar" MaxLength="40" />
+          <Property Name="Department" Type="varchar" MaxLength="40" />
+          <Property Name="CostCenter" Type="varchar" MaxLength="40" />
+          <Property Name="BuildingID" Type="varchar" MaxLength="40" />
+          <Property Name="FloorName" Type="varchar" MaxLength="40" />
+          <Property Name="FloorSection" Type="varchar" MaxLength="40" />
+          <Property Name="ChangePasswordAtNextSignIn" Type="varchar" MaxLength="40" />
+          <Property Name="NewStatus" Type="varchar" MaxLength="40" />
+        </EntityType>
+        <EntityContainer Name="CuentasGoogleEFStoreContainer">
+          <EntitySet Name="UsuariosGoogle" EntityType="Self.UsuariosGoogle" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="CuentasGoogleEF" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="UsuariosGoogle">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="FirstName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="LastName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="EmailAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Password" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="PasswordHashFunction" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="OrgUnitPath" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="NewPrimaryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="RecoveryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="HomeSecondaryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="WorkSecondaryEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="RecoveryPhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="WorkPhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="HomePhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="MobilePhone" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="WorkAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="HomeAddress" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="EmployeeID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="EmployeeType" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="EmployeeTitle" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ManagerEmail" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="Department" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="CostCenter" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="BuildingID" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="FloorName" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="FloorSection" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="ChangePasswordAtNextSignIn" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <Property Name="NewStatus" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+        </EntityType>
+        <EntityContainer Name="CuentasGoogleEntityFramework" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="UsuariosGoogle" EntityType="Self.UsuariosGoogle" />
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="CuentasGoogleEFStoreContainer" CdmEntityContainer="CuentasGoogleEntityFramework">
+          <EntitySetMapping Name="UsuariosGoogle">
+            <EntityTypeMapping TypeName="CuentasGoogleEF.UsuariosGoogle">
+              <MappingFragment StoreEntitySet="UsuariosGoogle">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+                <ScalarProperty Name="LastName" ColumnName="LastName" />
+                <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+                <ScalarProperty Name="Password" ColumnName="Password" />
+                <ScalarProperty Name="PasswordHashFunction" ColumnName="PasswordHashFunction" />
+                <ScalarProperty Name="OrgUnitPath" ColumnName="OrgUnitPath" />
+                <ScalarProperty Name="NewPrimaryEmail" ColumnName="NewPrimaryEmail" />
+                <ScalarProperty Name="RecoveryEmail" ColumnName="RecoveryEmail" />
+                <ScalarProperty Name="HomeSecondaryEmail" ColumnName="HomeSecondaryEmail" />
+                <ScalarProperty Name="WorkSecondaryEmail" ColumnName="WorkSecondaryEmail" />
+                <ScalarProperty Name="RecoveryPhone" ColumnName="RecoveryPhone" />
+                <ScalarProperty Name="WorkPhone" ColumnName="WorkPhone" />
+                <ScalarProperty Name="HomePhone" ColumnName="HomePhone" />
+                <ScalarProperty Name="MobilePhone" ColumnName="MobilePhone" />
+                <ScalarProperty Name="WorkAddress" ColumnName="WorkAddress" />
+                <ScalarProperty Name="HomeAddress" ColumnName="HomeAddress" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="EmployeeType" ColumnName="EmployeeType" />
+                <ScalarProperty Name="EmployeeTitle" ColumnName="EmployeeTitle" />
+                <ScalarProperty Name="ManagerEmail" ColumnName="ManagerEmail" />
+                <ScalarProperty Name="Department" ColumnName="Department" />
+                <ScalarProperty Name="CostCenter" ColumnName="CostCenter" />
+                <ScalarProperty Name="BuildingID" ColumnName="BuildingID" />
+                <ScalarProperty Name="FloorName" ColumnName="FloorName" />
+                <ScalarProperty Name="FloorSection" ColumnName="FloorSection" />
+                <ScalarProperty Name="ChangePasswordAtNextSignIn" ColumnName="ChangePasswordAtNextSignIn" />
+                <ScalarProperty Name="NewStatus" ColumnName="NewStatus" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
