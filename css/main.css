@@ -260,7 +260,7 @@ body{
 }
 
 #niveles .c-aulas{
-  background-image: url(../img/c-intercambio.jpg)!important;
+  background-image: url(../img/c-aulas.jpg)!important;
   background-size: cover!important;
   background-position: center!important;
 }
@@ -433,6 +433,9 @@ body{
 }
 #data p{
   text-align: justify;
+}
+#datos-claves h5{
+  font-family: 'Titillium Web', sans-serif;
 }
 /* IMGS LANDINGS */
 #img-landing{
