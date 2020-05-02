@@ -91,6 +91,10 @@ body{
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
 }
+#menu-btn button:focus{
+  outline: none;
+  box-shadow: none;
+}
 #menu-btn .dropdown-menu .dropdown-item{
   font-family: 'Titillium Web', sans-serif;
 }
@@ -142,32 +146,35 @@ body{
   height: 50%;
   margin-top: 20%;
 }
+#cuadros{
+  display: none;
+}
 /* CONTENIDO CUADROS */
 .btn-primary,
-#niveles .c-azul{
+.c-azul{
   background-color: rgb(0,122,255);
 }
 .text-primary{
   color: rgb(0,122,255)!important;
 }
 .btn-success,
-#niveles .c-verde{
+.c-verde{
   background-color: rgb(52,199,89);
 }
 .btn-violet,
-#niveles .c-violeta{
+.c-violeta{
   background-color: rgb(175,82,222);
 }
 .btn-warning,
-#niveles .c-amarillo{
+.c-amarillo{
   background-color: rgb(255,204,0);
 }
 .btn-danger,
-#niveles .c-rojo{
+.c-rojo{
   background-color: rgb(255,59,48);
 }
 .btn-info,
-#niveles .c-celeste{
+.c-celeste{
   background-color: rgb(90,200,250);
 }
 .content .content-overlay {
@@ -237,7 +244,7 @@ body{
   border: 3px solid white;
   height: 19vw;
 }
-#niveles .c-evento{
+.c-evento{
   background-image: url(../img/c-evento.jpg)!important;
   background-size: cover!important;
   background-position: center!important;
@@ -247,8 +254,7 @@ body{
   background-size: cover!important;  
   background-position: center!important;  
 }
-
-#niveles .c-intercambio{
+.c-intercambio{
   background-image: url(../img/c-intercambio.jpg)!important;
   background-size: cover!important;
   background-position: center!important;
@@ -258,8 +264,7 @@ body{
   background-size: cover!important;  
   background-position: center!important;  
 }
-
-#niveles .c-aulas{
+.c-aulas{
   background-image: url(../img/c-aulas.jpg)!important;
   background-size: cover!important;
   background-position: center!important;
@@ -269,8 +274,7 @@ body{
   background-size: cover!important;  
   background-position: center!important;  
 }
-
-#niveles .c-fisica{
+.c-fisica{
   background-image: url(../img/c-fisica.jpg)!important;
   background-size: cover!important;
   background-position: center!important;
@@ -280,8 +284,7 @@ body{
   background-size: cover!important;  
   background-position: center!important;  
 }
-
-#niveles .c-musica{
+.c-musica{
   background-image: url(../img/c-musica.jpg)!important;
   background-size: cover!important;
   background-position: center!important;
@@ -505,6 +508,9 @@ body{
   #niveles .cuadro h5{
     font-size: .75rem!important;
   }
+  #contact{
+    padding: 2.5rem;
+  }
   #footer ul li{
     margin: 0;
   }
@@ -551,9 +557,25 @@ body{
     min-height: 8vh;
     height: auto;
   }
+  .content-title{
+    font-size: 1rem;
+  }
+  #contact{
+    padding: 1.25rem;
+  }
   #data .card img{
     width: 50%;
     height: auto;
+  }
+  #afiliados{
+    margin: 70px 0;
+  }
+  #afiliados img {
+    max-height: 32px;
+    max-width: 95px;
+    display: inline-block;
+    padding: 0;
+    margin: 12px 4px;
   }
 }
 @media only screen and (max-width:825px){
@@ -579,8 +601,22 @@ body{
     margin-top: 15px;
   }
   #niveles .cuadro h5 {
-    font-size: .9rem!important;
-    padding-bottom: 25px;
+    font-size: .75rem!important;
+    bottom: 0!important;
+    left: 6px !important;
+  }
+  #contact{
+    padding: 10px;
+  }
+  #contact .col-xs-3,
+  #contact .icon{
+    display: none;
+  }
+  #contact .col-xs-9 .pl-4{
+    padding-left: 0!important;
+  }
+  #contact .unite {
+    display: none;
   }
   #contacto .mail-row{
     margin-bottom: 0!important;
@@ -621,8 +657,37 @@ body{
   }
 }
 @media only screen and (max-width:575px){
-  #niveles .col{
-    flex-basis: auto;
+  #niveles{
+    display: none;
+  }
+  #cuadros{
+    display: block!important;
+  }
+  #cuadros .icono{
+    margin-top: 5vh;
+    height: 70px;    
+  }
+  #cuadros .w-50{
+    text-align: center;
+    padding: 0!important;
+    border: 3px solid white;
+  }
+  #cuadros .w-50 .cuadro{
+    height: 23vh;
+  }
+  #cuadros a{
+    font-family: 'Titillium Web', sans-serif;
+    color: #fff;
+    font-size: .8rem!important;
+  }
+  #cuadros h5{
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+  }
+  #contact-msj{
+    border:none!important;
   }
   p{
     margin-bottom: .35rem;
