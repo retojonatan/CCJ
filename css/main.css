@@ -440,6 +440,9 @@ body{
 #datos-claves h5{
   font-family: 'Titillium Web', sans-serif;
 }
+#data .eoe h5{
+  display: none;
+}
 /* IMGS LANDINGS */
 #img-landing{
   padding-top: 20px;
@@ -567,6 +570,24 @@ body{
     width: 50%;
     height: auto;
   }
+  #data .eoe img{
+    display: block!important;
+    margin: 20px auto 0 auto!important;
+    width: 50vw!important;
+    float: none!important;
+  }
+  #data .eoe .col-sm-3{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  #data .eoe p{
+    display: none;
+  }
+  #data .eoe h5{
+    display: block;
+    text-align: center;
+  }
   #afiliados{
     margin: 70px 0;
   }
@@ -657,6 +678,10 @@ body{
   }
 }
 @media only screen and (max-width:575px){
+  #menu-btn .dropdown-menu{
+    width: 97%;
+    text-align: center;
+  }
   #niveles{
     display: none;
   }
