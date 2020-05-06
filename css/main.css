@@ -38,6 +38,29 @@ body{
 #carrusel{
   margin-top: 8vh;
 }
+#carrusel .carru p{
+  font-size: 1.2rem!important;
+}
+#carrusel .cuadrito-r{
+  background-color: rgba(99,199,102, .75);
+  height: 150px;
+  width: 350px;
+  position: absolute;
+  top: 60%;
+  right: 0;
+  color: white;
+  padding: 1.15rem 1.5rem;
+}
+#carrusel .cuadrito-l{
+  background-color: rgba(19,99,202, .75);
+  height: 150px;
+  width: 350px;
+  position: absolute;
+  top: 60%;
+  left: 0;
+  color: white;
+  padding: 1.15rem 1.5rem;
+}
 #carrusel video,
 #carrusel img{
   height: 80vh;
