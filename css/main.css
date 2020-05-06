@@ -38,6 +38,7 @@ body{
 #carrusel{
   margin-top: 8vh;
 }
+#carrusel video,
 #carrusel img{
   height: 80vh;
   width: 100%;
@@ -443,6 +444,16 @@ body{
 #data .eoe h5{
   display: none;
 }
+#data .videos-profes h3{
+  height: 65px;
+}
+#data .videos-profes video{
+  min-height: 320px;
+  max-height: 320px;
+  height: 320px;
+  background-color: #181818;
+  margin-top: 1.5rem;
+}
 /* IMGS LANDINGS */
 #img-landing{
   padding-top: 20px;
@@ -452,6 +463,7 @@ body{
   background-size: cover;
   height: 40vh;
 }
+
 
 @media only screen and (max-width:1440px){
   #navbar .nav-link{
@@ -606,6 +618,7 @@ body{
   #navbar .img-brand, .img-lang{
     height: 35px;
   }
+  #carrusel video,
   #carrusel img {
     height: 63vh;
   }
