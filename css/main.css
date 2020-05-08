@@ -377,6 +377,7 @@ body{
 #footer {
   position: fixed;
   height: 6vh;
+  min-height: 30px!important;
   bottom: 0;
   width: 100%;
   border-top: 1px solid #0a0a0a;
@@ -486,7 +487,16 @@ body{
   background-size: cover;
   height: 40vh;
 }
-
+.logo-arte{
+  top: 37vh;
+  height: 200px;
+  z-index: 999999999;
+  width: auto;
+  position: absolute;
+  left: unset;
+  transform: translate3d(-50%,0,0);
+  max-height: 200px;
+}
 
 @media only screen and (max-width:1440px){
   #navbar .nav-link{
