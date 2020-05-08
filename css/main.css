@@ -528,6 +528,9 @@ body{
   #data .card .mt-5{
     display: none;
   }
+  #contact-datos{
+    padding-right: 30px!important;
+  }
 }
 @media only screen and (max-width:1024px){
   p,a{
