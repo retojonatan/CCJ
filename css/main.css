@@ -445,8 +445,9 @@ body{
   float: right;
   padding-left: 70px;
 }
-.card{
+#data .card{
   display: inline-block;
+  width: 100%;
 }
 
 /* DATA */

@@ -193,15 +193,14 @@
     $("#jsGrid1").jsGrid({
         height: "100%",
         width: "100%",
-        filtering: true,
         sorting: true,
         paging: true,
- 
+
         data: db.clients,
  
         fields: [
-            { name: "Name", title: "Nombre del Alumno", type: "text", width: 150},
-            { name: "Age", title: "Faltas acumuladas", type: "number", width: 50 },
+            { name: "Name", title: "Fecha de la falta", type: "text", width: 150},
+            { name: "Country", title: "Cantidad de faltas", type: "number", width: 50 },
             { name: "Married",  type: "checkbox", title: "Se informó la falta" }
         ]
     });
