@@ -92,7 +92,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="./calificaciones.html" class="nav-link">
+            <a href="./calificaciones.html" class="nav-link active">
               <i class="nav-icon fas fa-edit"></i>
               <p>
                 Calificaciones
@@ -137,7 +137,7 @@
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1 class="m-0 text-dark">Home</h1>
+            <h1 class="m-0 text-dark">Calificaciones</h1>
           </div><!-- /.col -->
         </div><!-- /.row -->
       </div><!-- /.container-fluid -->
@@ -147,21 +147,75 @@
     <!-- Main content -->
     <div class="content">
       <div class="container-fluid">
-        <div class="card card-primary card-outline">
-          <div class="card-header">
-            <h3 class="card-title">Bienvenidos al dashboard del Gartenstadt</h3>
-          </div> <!-- /.card-body -->
-          <div class="card-body">
-            <p>En el dashboard va a poder consultar sobre su vida académica, va a tener cosas tales como:
-              <br>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab mollitia tempore culpa omnis, quis autem eligendi voluptatem provident minus ex!</p>
-            <strong>Recomendaciones</strong>
-            <div>
-              <a href="./inasistencias.html">Puede consultar sus inasistencias</a><br>
-              <a href="./comunicados.html">Ver los últimos comunicados del Colegio</a><br>
-              <a href="./material.html">Revisar el material de estudio</a><br>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="card w-100">
+              <div class="card-header">
+                <h3 class="card-title">Notas del año lectivo</h3>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <table class="table table-bordered">
+                  <thead>                  
+                    <tr>
+                      <th style="width: 10px">#</th>
+                      <th>Materia</th>
+                      <th style="width: 50px">Nota 1er cuatrimestre</th>
+                      <th style="width: 50px">Nota 2do cuatrimestre</th>
+                      <th style="width: 50px">Nota 3er cuatrimestre</th>
+                      <th style="width: 50px">Nota Final</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1.</td>
+                      <td>Matemáticas</td>
+                      <td><span class="badge bg-primary">55 /100</span></td>
+                      <td><span class="badge bg-primary">55 /100</span></td>
+                      <td><span class="badge bg-primary">55 /100</span></td>
+                      <td><span class="badge bg-primary">55 /100</span></td>
+                    </tr>
+                    <tr>
+                      <td>2.</td>
+                      <td>Inglés</td>
+                      <td><span class="badge bg-warning">70 /100</span></td>
+                      <td><span class="badge bg-warning">70 /100</span></td>
+                      <td><span class="badge bg-warning">70 /100</span></td>
+                      <td><span class="badge bg-warning">70 /100</span></td>
+                    </tr>
+                    <tr>
+                      <td>3.</td>
+                      <td>Alemán</td>
+                      <td><span class="badge bg-danger">30 /100</span></td>
+                      <td><span class="badge bg-danger">30 /100</span></td>
+                      <td><span class="badge bg-danger">30 /100</span></td>
+                      <td><span class="badge bg-danger">30 /100</span></td>
+                    </tr>
+                    <tr>
+                      <td>4.</td>
+                      <td>Educación Física</td>
+                      <td><span class="badge bg-success">90 /100</span></td>
+                      <td><span class="badge bg-success">90 /100</span></td>
+                      <td><span class="badge bg-success">90 /100</span></td>
+                      <td><span class="badge bg-success">90 /100</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <!-- /.card-body -->
+              <div class="card-footer clearfix">
+                <ul class="pagination pagination-sm m-0 float-right">
+                  <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+                </ul>
+              </div>
             </div>
-          </div><!-- /.card-body -->
+            <!-- /.card -->
+          </div>
+          <!-- /.col -->
         </div>
       </div><!-- /.container-fluid -->
     </div>

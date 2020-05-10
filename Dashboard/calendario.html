@@ -122,7 +122,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="./calendario.html" class="nav-link">
+            <a href="./calendario.html" class="nav-link active">
               <i class="nav-icon fas fa-calendar-alt"></i>
               <p>
                 Calendario
@@ -154,7 +154,7 @@
     <div class="content">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-md-9 mx-auto">
             <div class="card card-primary">
               <div class="card-body p-0">
                 <!-- THE CALENDAR -->
@@ -198,23 +198,21 @@
 <script src="./plugins/fullcalendar-interaction/main.min.js"></script>
 <script src="./plugins/fullcalendar-bootstrap/main.min.js"></script>
 <script>
-
   document.addEventListener('DOMContentLoaded', function() {
     var calendarEl = document.getElementById('calendar');
 
     var calendar = new FullCalendar.Calendar(calendarEl, {
       plugins: [ 'bootstrap', 'interaction', 'dayGrid', 'timeGrid' ],
       header    : {
-        left  : 'prev,next today',
+        left  : 'prev',
         center: 'title',
-        right : 'dayGridMonth,timeGridWeek,timeGridDay'
+        right : 'next'
       },
       'themeSystem': 'bootstrap'
     });
     calendar.setOption('locale', 'es');
     calendar.render();
   });
-
 </script>
 </body>
 </html>
