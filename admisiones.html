@@ -27,53 +27,54 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
     <section class="mb-4 pb-4">
       <nav class="navbar navbar-expand-lg navbar-dark bg-gart fixed-top py-0" id="navbar">
-        <a class="navbar-brand" href="./index.html"><img class="img-brand" src="img/logo-01.png" alt="logo Gartenstadt Schule"></a>
+        <a class="navbar-brand" href="./Index"><img class="img-brand" src="/img/logo-01.png" alt="logo Gartenstadt Schule"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto">
             <li>
-              <a class="nav-link" href="./deutsch.html">DEUTSCH <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="./deutsch">DEUTSCH <span class="sr-only">(current)</span></a>
             </li>
             <li>
-              <a class="nav-link" href="./english.html">ENGLISH</a>
+              <a class="nav-link" href="./english">ENGLISH</a>
             </li>
             <li>
-              <a class="nav-link" href="./ed-fisica.html">ED. FÍSICA</a>
+              <a class="nav-link" href="./educacionfisica">ED. FÍSICA</a>
             </li>
             <li>
-              <a class="nav-link" href="./musica.html">ARTE</a>
+              <a class="nav-link" href="./musica">MUSICA</a>
             </li>
             <li>
-              <a class="nav-link" href="./inicial.html">INICIAL</a>
+              <a class="nav-link" href="./inicial">INICIAL</a>
             </li>
             <li>
-              <a class="nav-link" href="./primaria.html">PRIMARIA</a>
+              <a class="nav-link" href="./primaria">PRIMARIA</a>
             </li>
             <li>
-              <a class="nav-link" href="./secundaria.html">SECUNDARIA</a>
+              <a class="nav-link" href="./secundaria">SECUNDARIA</a>
             </li>
             <li>
-              <a class="nav-link" href="./institucional.html">INSTITUCIONAL</a>
+              <a class="nav-link" href="./institucional">INSTITUCIONAL</a>
             </li>
             <li>
-              <a class="nav-link" href="./contacto.html">CONTACTO</a>
+              <a class="nav-link" href="./contacto">CONTACTO</a>
             </li>
           </ul>
           <ul class="navbar-nav ml-auto border-right">
             <li class="nav-item pr-3">
-              <a class="nav-link" href="./login.html">Login</a>
+              <a class="nav-link" href="./login">Login</a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="./index.html">Colegio Ciudad Jardin</a>
+              <a class="nav-link" href="./Index">Colegio Ciudad Jardin</a>
             </li>
           </ul>
-          <img class="img-lang" src="./img/iconos/iconos-13.png" alt="">
+          <img class="img-lang" src="/img/iconos/iconos-13.png" alt="">
         </div>
       </nav>
     </section>
@@ -154,7 +155,58 @@
               <label for="porqueGartenstadt">Porque eligieron esta institución:</label>
               <textarea class="form-control" id="porqueGartenstadt" rows="3"></textarea>
             </div>
-            <button type="submit" class="btn px-5 btn-info">ENVIAR</button>
+            <input type="button" value="ENVIAR" class="btn btn-info px-5 mb-2" onclick="registrar()" />
+            <script>
+              function registrar() {
+                var nombreCompleto = document.getElementById("alumno").value;
+                var nivelEducativo = document.getElementById("nivel").value;
+                var edad = document.getElementById("edad").value;
+                var institucion = document.getElementById("institucion").value;
+                var nombrePadre = document.getElementById("noPadre").value;
+                var apellidoPadre = document.getElementById("apPadre").value;
+                var nombreMadre = document.getElementById("noMadre").value;
+                var apellidoMadre = document.getElementById("apMadre").value;
+                var direccion = document.getElementById("direccion").value;
+                var telefono = document.getElementById("tel").value;
+                var mail = document.getElementById("inputEmail").value;
+                var mensaje = document.getElementById("porqueGartenstadt").value;
+
+                llamarVistaParcial(nombreCompleto, nivelEducativo, edad, institucion, nombrePadre, 
+                                    apellidoPadre, nombreMadre, apellidoMadre, direccion, telefono, mail, mensaje);
+              }
+
+              function llamarVistaParcial(nombreCompleto, nivelEducativo, edad, institucion, nombrePadre, 
+                                    apellidoPadre, nombreMadre, apellidoMadre, direccion, telefono, mail, mensaje) {
+                var urlCompleta = "https://colegiociudadjardin.edu.ar/OperacionFormulario/RegistroAdmision"
+                
+                var request = $.ajax({
+                    url: urlCompleta, 
+                    type: 'GET', 
+                    dataType: 'json',
+                    data: {
+                      nombreApellido: nombreCompleto, 
+                      nivelEducativo: nivelEducativo, 
+                      edad: edad, 
+                      institucionProveniente: institucion,
+                      nombrePadre: nombrePadre,
+                      apellidoPadre: apellidoPadre,
+                      nombreMadre: nombreMadre,
+                      apellidoMadre: apellidoMadre,
+                      direccion: direccion,
+                      telefono: telefono,
+                      mail: mail,
+                      mensaje: mensaje
+                    }
+                })
+
+                request.done(function (response) {
+
+                })  
+                request.fail(function (jqXHR, textStatus) {
+                    alert("Hubo un error: " + textStatus);
+                })
+              }
+            </script>
           </form>
           <p class="p-3 text-center">Se le recuerda que nuestro horario de atención en la administración es de Lunes a Viernes de 8:00 hs a 16:00hs. <br> Nuestros Teléfonos son: (011) 4751-0376 (011) 4758-6245</p>
         </div>
@@ -195,22 +247,22 @@
           <div class="col-sm-8 align-self-center">
             <ul class="m-auto">
               <li><a class="btn btn-gart" href="http://mail.google.com/a/colegiociudadjardin.edu.ar">Web Mail</a></li>
-              <li><a class="btn btn-gart" href="./login.html">Campus Virtual</a></li>
-              <li><a class="btn btn-gart disabled" href="./como-llegar.html">Como llegar</a></li>
+              <li><a class="btn btn-gart" href="./login">Campus Virtual</a></li>
+              <li><a class="btn btn-gart disabled" href="./comollegar">Como llegar</a></li>
               <li>
                 <div class="btn-group dropup">
                   <button type="button" class="btn-gart dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                     Alumnos
                   </button>
                   <div class="dropdown-menu mb-2">
-                    <a class="dropdown-item" href="./inicial.html">Inicial</a>
-                    <a class="dropdown-item" href="./primaria.html">Primaria</a>
-                    <a class="dropdown-item" href="./secundaria.html">Secundaria</a>
+                    <a class="dropdown-item" href="./inicial">Inicial</a>
+                    <a class="dropdown-item" href="./primaria">Primaria</a>
+                    <a class="dropdown-item" href="./secundaria">Secundaria</a>
                   </div>
                 </div>
               </li>
-              <li><a class="btn btn-gart disabled" href="./profesores.html">Profesores</a></li>
-              <li><a class="btn btn-gart disabled" href="./egresados.html">Egresados</a></li>
+              <li><a class="btn btn-gart disabled" href="./profesores">Profesores</a></li>
+              <li><a class="btn btn-gart disabled" href="./egresados">Egresados</a></li>
             </ul>            
           </div>
           <div class="col-sm-3 offset-sm-1 ml-auto my-auto text-right align-self-center">
@@ -222,7 +274,8 @@
           </div>
         </div>
     </section>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/slick/slick.min.js"></script>
