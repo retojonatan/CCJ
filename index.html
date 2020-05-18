@@ -462,7 +462,6 @@
                 var nombre = document.getElementById("Nombre").value;
                 var email = document.getElementById("Email").value;
                 var mensaje = document.getElementById("Mensaje").value;
-
                 llamarVistaParcial(nombre, email, mensaje);
               }
               function llamarVistaParcial(nombre, email, mensaje) {
@@ -474,15 +473,13 @@
                     dataType: 'json',
                     data: {nombre: nombre, email: email, mensaje: mensaje }
                 })
-
                 request.done(function (response) {
                   document.getElementById("form-contacto").reset();
-                  $('#modalExito').modal('show');        
-                })  
+                  $('#modalExito').modal('show');
+                })
                 request.fail(function (jqXHR, textStatus) {
-                  alert("Hubo un error: " + textStatus);
                   document.getElementById("form-contacto").reset();
-                  $('#modalExito').modal('show');                                     
+                  $('#modalFail').modal('show');
                 })
               }
             </script>
@@ -637,6 +634,7 @@
     </div>
 
     <!-- Modal Éxito -->
+
     <div class="modal fade" id="modalExito" tabIndex="-1" role="dialog" aria-labelledby="modalExito" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
         <div class="modal-content">
@@ -649,6 +647,30 @@
           <div class="modal-body">
             <p>
               Su mensaje ha sido enviado con éxito y será respondido a la brevedad. <br>
+              Muchas gracias.
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Hubo un Problema -->
+
+    <div class="modal fade" id="modalFail" tabIndex="-1" role="dialog" aria-labelledby="modalFail" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">El mensaje no ha sido Enviado</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Su mensaje no ha podido enviarse, intente nuevamente, o comuníquese por mail a contacto@colegiociudadjardin.edu.ar, sepa disculpar el inconveniente.<br>
               Muchas gracias.
             </p>
           </div>
