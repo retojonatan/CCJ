@@ -42,25 +42,28 @@ body{
 #carrusel .carru p{
   font-size: 1.2rem!important;
 }
-#carrusel .cuadrito-r{
-  background-color: rgba(99,199,102, .75);
-  height: 150px;
-  width: 350px;
-  position: absolute;
-  top: 60%;
-  right: 0;
-  color: white;
-  padding: 1.15rem 1.5rem;
+#carrusel .cuadrito:hover{
+  background-color: rgba(255,255,255, 1);
+  color: #000;
+  border: 1px solid #000!important;
+  font-weight: bold;
 }
-#carrusel .cuadrito-l{
-  background-color: rgba(19,99,202, .75);
-  height: 150px;
-  width: 350px;
+#carrusel .cuadrito{
+  background-color: rgba(0,0,0,.5);
+  height: 50px;
+  width: 200px;
   position: absolute;
-  top: 60%;
-  left: 0;
+  top: 80%;
+  right: calc(50% - 100px);
   color: white;
-  padding: 1.15rem 1.5rem;
+  border: 1px solid #ccc!important;
+  padding: 2px;
+  text-align: center;
+  display: grid;
+}
+#carrusel .cuadrito p{
+  margin: auto;
+  font-family: "Titillium Web", 'Baloo Bhaina 2'!important;
 }
 #carrusel video,
 #carrusel img{
