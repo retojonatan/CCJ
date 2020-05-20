@@ -26,6 +26,41 @@ body{
   border-color: #ccc !important;
   border-width: 2px !important;
 }
+#navbarGart{
+  place-content: center;
+  justify-content: center;
+  display: inherit;
+  position: absolute;
+  margin: auto;
+  left: 50%;
+  right: 50%;
+}
+#navbarGart,
+#navbarGart button{
+  font-family: 'Titillium Web', sans-serif;
+  text-transform: uppercase!important;
+  font-size: .8rem!important;
+  font-weight: 600;
+}
+#navbarGart .btn{
+  background-color: transparent!important;
+  color: #fff!important;
+}
+#navbarGart a{
+  font-weight: 600;
+  text-transform: initial!important;
+  font-size: .85rem!important;
+}
+#navbarGart .bg-transparente{
+  background-color: rgba(0,0,0,.75);
+}
+#navbarGart .dropdown-item:focus, 
+#navbarGart .dropdown-item:hover{
+  background-color: rgba(200,200,200,.6);
+}
+#navbarGart .btn-group:hover > div.dropdown-menu{
+  display: block!important;    
+}
 .fixed-top {
   height: 8vh;
 }
@@ -120,9 +155,12 @@ body{
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
 }
+#navbarGart button,
+#navbarGart button:focus,
 #menu-btn button:focus{
   outline: none;
   box-shadow: none;
+  border: 0!important;
 }
 #menu-btn .dropdown-menu .dropdown-item{
   font-family: 'Titillium Web', sans-serif;
@@ -508,8 +546,12 @@ body{
 }
 
 @media only screen and (max-width:1440px){
+  #navbarGart .btn{
+    font-size: 12px!important;
+    padding: .375rem .35rem!important;
+  }
   #navbar .nav-link{
-    font-size: 12px;
+    font-size: 12px!important;
   }
   #navbar .pr-3{
     padding-right: .35rem!important;
@@ -597,6 +639,15 @@ body{
   .navbar-collapse{
     padding: 20px;
     text-align: center;
+  }
+  #navbarGart{
+    display: none!important;
+  }
+  #menuMobile{
+    display: block!important;
+  }
+  #menuMobile .nav-link{
+    color: #fff!important;
   }
   #navbar .pr-3{
     padding-right: 0!important;

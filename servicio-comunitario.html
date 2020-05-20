@@ -41,42 +41,147 @@
     <section class="mb-4 pb-4">
       <nav class="navbar navbar-expand-lg navbar-dark bg-gart fixed-top py-0" id="navbar">
         <a class="navbar-brand" href="./Index"><img class="img-brand" src="/img/logo-01.png" alt="logo Gartenstadt Schule"></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mx-auto">
-            <li>
-              <a class="nav-link" href="./Deutsch">DEUTSCH <span class="sr-only">(current)</span></a>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav mr-auto d-none" id="menuMobile">            
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                SOBRE NOSOTROS
+              </a>
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item disabled" target="_blank" href="./somos">Que Somos</a>
+                <a class="dropdown-item" target="_blank" href="./nuestrocolegio">Nuestro colegio</a>
+                <a class="dropdown-item" target="_blank" href="./historia">Historia</a>
+                <a class="dropdown-item" target="_blank" href="./director">Nuestro director</a>
+                <a class="dropdown-item disabled" target="_blank" href="./staff">Staff</a>
+                <a class="dropdown-item disabled" target="_blank" href="./nuestrosproyectos">Nuestros proyectos</a>
+              </div>
             </li>
-            <li>
-              <a class="nav-link" href="./english">ENGLISH</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                DEPARTAMENTOS
+              </a>
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" target="_blank" href="./deutsch">Departamento de Alemán</a>
+                <a class="dropdown-item" target="_blank" href="./english">Departamento de Inglés</a>
+                <a class="dropdown-item" target="_blank" href="./musica">Departamento de Música</a>
+                <a class="dropdown-item disabled" target="_blank" href="./informatica">Departamento de Informática</a>
+                <a class="dropdown-item" target="_blank" href="./educacionfisica">Departamento de Educación Física</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" target="_blank" href="./orientacion">Equipo de Orientación Escolar</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" target="_blank" href="./secundaria">Dirección Nivel Secundaria</a>
+                <a class="dropdown-item" target="_blank" href="./primaria">Dirección Nivel Primaria</a>
+                <a class="dropdown-item" target="_blank" href="./inicial">Dirección Nivel Inicial</a>
+              </div>
             </li>
-            <li>
-              <a class="nav-link" href="./educacionfisica">ED FÍSICA</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                EL GARTENSTADT
+              </a>
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item disabled" target="_blank" href="./vidaescolar">Vida Escolar</a>
+                <a class="dropdown-item disabled" target="_blank" href="./intercambios">Schüleraustausch</a>
+                <a class="dropdown-item disabled" target="_blank" href="./veronica">Schullandheim Verónica</a>
+                <a class="dropdown-item disabled" target="_blank" href="./serviciocomunitario">Community Service</a>
+                <a class="dropdown-item disabled" target="_blank" href="./mejorpromedio">Ehrentafel</a>
+                <a class="dropdown-item disabled" target="_blank" href="./aulas-digitales">Aulas Digitales: Educational Technology</a>
+              </div>
             </li>
-            <li>
-              <a class="nav-link" href="./musica">MUSICA</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                EVENTOS
+              </a>
+              <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item disabled" target="_blank" href="./concerts">English Concerts</a>
+                <a class="dropdown-item disabled" target="_blank" href="./expresarte">Expresarte</a>
+                <a class="dropdown-item disabled" target="_blank" href="./expresarte">Familienfest</a>
+                <a class="dropdown-item disabled" target="_blank" href="./expoalemania">Expoalemania</a>
+              </div>
             </li>
-            <li>
-              <a class="nav-link" href="./inicial">INICIAL</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ADMINISTRACIÓN</a>
             </li>
-            <li>
-              <a class="nav-link" href="./primaria">PRIMARIA</a>
-            </li>
-            <li>
-              <a class="nav-link" href="./secundaria">SECUNDARIA</a>
-            </li>
-            <li>
-              <a class="nav-link" href="./institucional">INSTITUCIONAL</a>
-            </li>
-            <li>
-              <a class="nav-link" href="./contacto">CONTACTO</a>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ADMISIONES</a>
             </li>
           </ul>
+          <div id="navbarGart">
+            <div>
+              <div class="btn-group dropdown h-100">
+                <button type="button" class="dropdown-toggle btn btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  SOBRE NOSOTROS
+                </button>
+                <div class="dropdown-menu bg-transparente pt-4 mt-n1">
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./somos">Que Somos</a>
+                  <a class="dropdown-item text-white" target="_blank" href="./nuestrocolegio">Nuestro colegio</a>
+                  <a class="dropdown-item text-white" target="_blank" href="./historia">Historia</a>
+                  <a class="dropdown-item text-white" target="_blank" href="./director">Nuestro director</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./staff">Staff</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./nuestrosproyectos">Nuestros proyectos</a>
+                </div>
+              </div>          
+            </div>
+            <div>
+              <div class="btn-group dropdown h-100">
+                <button type="button" class="dropdown-toggle btn btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  DEPARTAMENTOS
+                </button>
+                <div class="dropdown-menu bg-transparente pt-4 mt-n1">
+                  <a class="dropdown-item text-white" target="_blank" href="./deutsch">Departamento de Alemán</a>
+                  <a class="dropdown-item text-white" target="_blank" href="./english">Departamento de Inglés</a>
+                  <a class="dropdown-item text-white" target="_blank" href="./musica">Departamento de Música</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./informatica">Departamento de Informática</a>
+                  <a class="dropdown-item text-white" target="_blank" href="./educacionfisica">Departamento de Educación Física</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-white" target="_blank" href="./orientacion">Equipo de Orientación Escolar</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item text-white" target="_blank" href="./secundaria">Dirección Nivel Secundaria</a>
+                  <a class="dropdown-item text-white" target="_blank" href="./primaria">Dirección Nivel Primaria</a>
+                  <a class="dropdown-item text-white" target="_blank" href="./inicial">Dirección Nivel Inicial</a>
+                </div>
+              </div>          
+            </div>
+            <div>
+              <div class="btn-group dropdown h-100">
+                <button type="button" class="dropdown-toggle btn btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  EL GARTENSTADT
+                </button>
+                <div class="dropdown-menu bg-transparente pt-4 mt-n1">
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./vidaescolar">Vida Escolar</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./intercambios">Schüleraustausch</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./veronica">Schullandheim Verónica</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./serviciocomunitario">Community Service</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./mejorpromedio">Ehrentafel</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./aulas-digitales">Aulas Digitales: Educational Technology</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div class="btn-group dropdown h-100">
+                <button type="button" class="dropdown-toggle btn btn-block" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  EVENTOS
+                </button>
+                <div class="dropdown-menu bg-transparente pt-4 mt-n1">
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./concerts">English Concerts</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./expresarte">Expresarte</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./expresarte">Familienfest</a>
+                  <a class="dropdown-item text-white disabled" target="_blank" href="./expoalemania">Expoalemania</a>
+                </div>
+              </div>
+            </div>
+            <div>
+              <a href="./Administracion" target="_blank" class="btn btn-block">ADMINISTRACIÓN</a>
+            </div>
+            <div>
+              <a href="./Admisiones" target="_blank" class="btn btn-block">ADMISIÓN</a>
+            </div>
+          </div>
           <ul class="navbar-nav ml-auto border-right">
             <li class="nav-item pr-3">
-              <a class="nav-link" href="./login">login</a>
+              <a class="nav-link" href="./login">Login</a>
             </li>
             <li class="nav-item active">
               <a class="nav-link" href="./Index">Colegio Ciudad Jardin</a>
