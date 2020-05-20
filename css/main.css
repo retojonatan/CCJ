@@ -151,6 +151,9 @@ body{
 }
 #menu-btn .btn,
 #menu-btn button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: none !important;
   font-family: 'Titillium Web', sans-serif;
   text-transform: uppercase;
