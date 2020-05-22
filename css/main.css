@@ -5,7 +5,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
 
-
 body{  
   font-family: 'Lato', sans-serif !important;
 }
@@ -572,8 +571,19 @@ body{
   #navbar .pr-3{
     padding-right: .35rem!important;
   }
+  #acto-fhd{
+    height: 76%;
+    width: 62%;
+    margin-top: 2rem!important;
+  }
 }
-
+@media only screen and (max-width:1366px){
+  #acto-fhd{
+    height: 84%;
+    width: 62%;
+    margin-top: .5rem!important;
+  }
+}
 @media only screen and (max-width:1280px){
   #navbar .nav-link{
     font-size: 10px;
@@ -616,6 +626,12 @@ body{
   }
   #contact-datos{
     padding-right: 30px!important;
+  }
+  #acto-fhd{
+    display: none!important;
+  }
+  #acto-hd{
+    display: unset!important;
   }
 }
 @media only screen and (max-width:1024px){
@@ -747,6 +763,9 @@ body{
     padding: 0;
     margin: 12px 4px;
   }
+  #actos .container{
+    max-width: 100%!important;
+  }
 }
 @media only screen and (max-width:825px){
   p,a{
@@ -831,6 +850,16 @@ body{
     flex: 0 0 50%;
     max-width: 50%;
   }
+  #acto-hd{
+    display: none!important;
+  }
+  #acto-m{
+    display: unset!important;
+  }
+  #actos .container,
+  #actos .card{
+    padding: 0!important;
+  }
 }
 @media only screen and (max-width:575px){
   #menu-btn .dropdown-menu{
@@ -912,5 +941,21 @@ body{
   #footer .col-sm-8 {
     text-align: center;
     padding: 20px;
+  }
+  #actos{
+    margin-top: -.25rem;
+    padding-top: .25rem!important;
+    padding-bottom: .25rem!important;
+  }
+  #acto-m{
+    height: 640px;
+  }
+}
+@media only screen and (max-width:414px){
+  #actos{
+    margin-top: -.5rem;
+  }
+  #acto-m{
+    height: 540px;
   }
 }
