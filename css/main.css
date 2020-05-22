@@ -469,7 +469,7 @@ body{
 }
 #contact {  
   padding: 5rem;
-  background-image: url(/img/car/aleman.jpg);
+  background-image: url(/img/index/fondo.jpg);
   background-size: cover;
   background-attachment: fixed;
 }
@@ -491,7 +491,6 @@ body{
   float: right;
   padding-left: 70px;
 }
-
 
 /* DATA */
 
@@ -547,6 +546,20 @@ body{
   transform: translate3d(-50%,0,0);
   max-height: 200px;
 }
+#staff .card-staff{
+  margin-left: 10px;
+  margin-right: 10px;
+  background-color: rgb(250,250,250);
+  box-shadow: 1px 1px 5px 1px rgba(0,0,0,.1);
+  border-radius: 0;
+  margin-bottom: 15px;
+}
+#staff .card-title{
+  font-weight: bold;
+}
+#staff .card-text{
+  font-size: .9rem;
+}
 
 @media only screen and (max-width:1440px){
   #navbarGart .btn{
@@ -584,13 +597,22 @@ body{
     padding: .5rem !important
   }
   #data .card p{
-    font-size: .9rem!important;
+    font-size: .9rem;
   }
   #data .card img{
     height: 230px;
   }
   #data .card .mt-5{
     display: none;
+  }
+  #staff img{
+    height: auto!important;
+  }
+  #staff .card-title{
+    font-size: 1.05rem;
+  }
+  #staff p{
+    font-size: .8rem!important;
   }
   #contact-datos{
     padding-right: 30px!important;
@@ -633,6 +655,15 @@ body{
   }
   #data .card li{
     font-size: .875rem;
+  }
+  #staff .card img{
+    object-fit: scale-down!important;
+  } 
+  #staff .card-title{
+    font-size: 1rem;
+  }
+  #staff p{
+    font-size: .75rem!important;
   }
 }
 @media only screen and (max-width:991px){
@@ -698,6 +729,13 @@ body{
   #data .eoe h5{
     display: block;
     text-align: center;
+  }
+  #staff .card img{
+    width: 100% !important;
+    padding: 0!important;
+  }
+  #staff .card-staff{
+    padding: 0!important
   }
   #afiliados{
     margin: 70px 0;
@@ -788,6 +826,11 @@ body{
     display: block;
     width: 100%;
   }
+  #staff .card-staff{
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
 }
 @media only screen and (max-width:575px){
   #menu-btn .dropdown-menu{
@@ -854,6 +897,9 @@ body{
   }
   #data .card img{
     display: none;
+  }
+  #staff .card-staff img{
+    display: unset!important;
   }
   #contacto .borde{
     border-left: 0!important;
