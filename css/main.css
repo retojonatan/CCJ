@@ -88,7 +88,7 @@ body{
   height: 50px;
   width: 200px;
   position: absolute;
-  top: 80%;
+  top: 82%;
   right: calc(50% - 100px);
   color: white;
   border: 1px solid #ccc!important;
@@ -571,7 +571,7 @@ body{
   height: 100%;
   z-index: 9999;
   background: url('/img/loader.gif') 50% 50% no-repeat rgb(249,249,249);
-  background-size: 150px;
+  background-size: 200px;
   opacity: 1;
 }
 
