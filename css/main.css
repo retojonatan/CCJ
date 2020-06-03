@@ -650,7 +650,7 @@ body{
   }
 }
 @media only screen and (max-width:1024px){
-  p,a{
+  p, a, button{
     font-size: .9rem!important;
   }
   #navbar .nav-link{
@@ -783,7 +783,7 @@ body{
   }
 }
 @media only screen and (max-width:825px){
-  p,a{
+  p, a, button{
     font-size: .8rem!important;
   }
   #navbar .img-brand, .img-lang{
