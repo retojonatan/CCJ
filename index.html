@@ -9,7 +9,7 @@
   gtag('js', new Date());
 
   gtag('config', 'G-NN2HME8G76');
-</script>    
+</script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Gartenstadt Schule :: Colegio Ciudad Jardín</title>
@@ -37,6 +37,13 @@
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>    
   </head>
   <body>
+
+    <!-- Loader -->
+
+    <div class="loader"></div>
+
+    <!-- Navbar -->
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-gart fixed-top py-0" id="navbar">
       <a class="navbar-brand" href="./Index"><img class="img-brand" src="/img/logo-01.png" alt="logo Gartenstadt Schule"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -74,17 +81,43 @@
       </div>
     </nav>
     
+    <!-- Carrusel FHD - HD - Mobile -->
+
     <section id="carrusel">
       <div class="carru" id="campus-fhd">
         <div>
-          <a href="./covid"><img src="/img/car/campus-fhd.jpg" alt=""></a>
+          <a href="https://www.instagram.com/colegiociudadjardin/" target="_blank"><img src="/img/car/ig-fhd.jpg" alt="imagen instagram aleman"></a>
         </div>
+        <div>
+          <a href="#" data-toggle="modal" data-target="#modalIngles">
+            <div class="cuadrito">
+              <p>¡MIRÁ EL VIDEO!</p>
+            </div>
+            <img src="/img/car/english-fhd.jpg" alt="imagen ingles">
+          </a>
+        </div>  
+        <div>
+          <a href="#" data-toggle="modal" data-target="#modalActo">
+            <div class="cuadrito">
+              <p>IR AL ACTO</p>
+            </div>
+            <img src="/img/car/acto-fhd.jpg" alt="acto 25 de mayo">
+          </a>
+        </div>    
+        <div>
+          <a href="#" data-toggle="modal" data-target="#modal25M">
+            <div class="cuadrito">
+              <p>¡MIRÁ EL VIDEO!</p>
+            </div>
+            <img src="/img/car/25m-fhd.jpg" alt="acto 25 de mayo musical">
+          </a>
+        </div>  
         <div>
           <a href="#" data-toggle="modal" data-target="#modalBuzos">
             <div class="cuadrito">
               <p>¡MIRÁ EL VIDEO!</p>
             </div>
-            <img src="/img/car/buzos-fhd.jpg" alt="">
+            <img src="/img/car/buzos-fhd.jpg" alt="presentación buzos egresados">
           </a>
         </div>    
         <div>
@@ -92,7 +125,7 @@
             <div class="cuadrito">
               <p>¡MIRÁ EL VIDEO!</p>
             </div>
-            <img src="/img/car/escuadras-fhd.jpg" alt="">
+            <img src="/img/car/escuadras-fhd.jpg" alt="escuadras de educación física">
           </a>
         </div>
         <div>
@@ -100,24 +133,26 @@
             <div class="cuadrito">
               <p>¡INGRESÁ!</p>
             </div>
-            <img src="/img/car/1.jpg" alt="">
+            <img src="/img/car/1.jpg" alt="galería del colegio">
           </a>
+        </div>
+        <div>
+          <a href="./covid"><img src="/img/car/campus-fhd.jpg" alt="ingreso al campus virtual"></a>
         </div>
         <div>
           <a href="#" data-toggle="modal" data-target="#modalFlieger">
             <div class="cuadrito">
               <p>¡MIRÁ EL VIDEO!</p>
             </div>
-            <img src="/img/car/flieger-fhd.jpg" alt="">
+            <img src="/img/car/flieger-fhd.jpg" alt="video musical das fliegerlied aleman">
           </a>
-        </div>
-        
+        </div>        
         <div>
           <a href="#" data-toggle="modal" data-target="#modalSaludo">
             <div class="cuadrito">
               <p>¡MIRÁ EL VIDEO!</p>
             </div>
-            <img src="/img/car/4.jpg" alt="">
+            <img src="/img/car/4.jpg" alt="saludos de los docentes">
           </a>
         </div>
         <div>
@@ -125,21 +160,45 @@
             <div class="cuadrito">
               <p>¡INGRESÁ!</p>
             </div>
-            <img src="/img/car/3.jpg" alt="">
+            <img src="/img/car/3.jpg" alt="información de las aulas virtuales del colegio">
           </a>
         </div> 
-      </div>
+      </div> <!-- fin carrusel FHD -->
 
       <div class="carru" id="campus-hd">
         <div>
-          <a href="./covid"><img src="/img/car/campus-hd.jpg" alt=""></a>
-        </div>  
+          <a href="https://www.instagram.com/colegiociudadjardin/" target="_blank"><img src="/img/car/ig-hd.jpg" alt="imagen instagram aleman"></a>
+        </div>
+        <div>
+          <a href="#" data-toggle="modal" data-target="#modalIngles">
+            <div class="cuadrito">
+              <p>¡MIRÁ EL VIDEO!</p>
+            </div>
+            <img src="/img/car/english-hd.jpg" alt="imagen ingles">
+          </a>
+        </div> 
+        <div>
+          <a href="#" data-toggle="modal" data-target="#modalActo">
+            <div class="cuadrito">
+              <p>IR AL ACTO</p>
+            </div>
+            <img src="/img/car/acto-hd.jpg" alt="acto 25 de mayo">
+          </a>
+        </div>
+        <div>
+          <a href="#" data-toggle="modal" data-target="#modal25M">
+            <div class="cuadrito">
+              <p>¡MIRÁ EL VIDEO!</p>
+            </div>
+            <img src="/img/car/25m-hd.jpg" alt="acto 25 de mayo musical">
+          </a>
+        </div>
         <div>
           <a href="#" data-toggle="modal" data-target="#modalBuzos">
             <div class="cuadrito">
               <p>¡MIRÁ EL VIDEO!</p>
             </div>
-            <img src="/img/car/buzos-hd.jpg" alt="">
+            <img src="/img/car/buzos-hd.jpg" alt="presentación buzos egresados">
           </a>
         </div>      
         <div>
@@ -147,7 +206,7 @@
             <div class="cuadrito">
               <p>¡MIRÁ EL VIDEO!</p>
             </div>
-            <img src="/img/car/escuadras-hd.jpg" alt="">
+            <img src="/img/car/escuadras-hd.jpg" alt="escuadras de educación física">
           </a>
         </div>
         <div>
@@ -155,15 +214,18 @@
             <div class="cuadrito">
               <p>¡INGRESÁ!</p>
             </div>
-            <img src="/img/car/1.jpg" alt="">
+            <img src="/img/car/1.jpg" alt="galería del colegio">
           </a>
         </div>
+        <div>
+          <a href="./covid"><img src="/img/car/campus-hd.jpg" alt="ingreso al campus virtual"></a>
+        </div>  
         <div>
           <a href="#" data-toggle="modal" data-target="#modalFlieger">
             <div class="cuadrito">
               <p>¡MIRÁ EL VIDEO!</p>
             </div>
-            <img src="/img/car/flieger-hd.jpg" alt="">
+            <img src="/img/car/flieger-hd.jpg" alt="video musical das fliegerlied aleman">
           </a>
         </div>
         <div>
@@ -171,7 +233,7 @@
             <div class="cuadrito">
               <p>¡MIRÁ EL VIDEO!</p>
             </div>
-            <img src="/img/car/4.jpg" alt="">
+            <img src="/img/car/4.jpg" alt="saludos de los docentes">
           </a>
         </div>
         <div>
@@ -179,30 +241,43 @@
             <div class="cuadrito">
               <p>¡INGRESÁ!</p>
             </div>
-            <img src="/img/car/3.jpg" alt="">
+            <img src="/img/car/3.jpg" alt="información de las aulas virtuales del colegio">
           </a>
         </div>        
-      </div>
+      </div> <!-- fin carrusel HD -->
 
       <div class="carru" id="campus">
         <div>
-          <a href="./covid"><img src="/img/car/campus.jpg" alt=""></a>
+          <a href="https://www.instagram.com/colegiociudadjardin/" target="_blank"><img src="/img/car/ig.jpg" alt="instagram del colegio"></a>
         </div>
         <div>
-          <a href="#" data-toggle="modal" data-target="#modalBuzos"><img src="/img/car/buzos.jpg" alt=""></a>
+          <a href="#" data-toggle="modal" data-target="#modalIngles"><img src="/img/car/english.jpg" alt="video de ingles"></a>
         </div>
         <div>
-          <a href="#" data-toggle="modal" data-target="#modalEscuadras"><img src="/img/car/escuadras.jpg" alt=""></a>
+          <a href="#" data-toggle="modal" data-target="#modalActo"><img src="/img/car/acto.jpg" alt="acto 25 de mayo"></a>
         </div>
         <div>
-          <a href="#" data-toggle="modal" data-target="#modalFlieger"><img src="/img/car/flieger.jpg" alt=""></a>
+          <a href="#" data-toggle="modal" data-target="#modal25M"><img src="/img/car/25m.jpg" alt="acto 25 de mayo musical"></a>
         </div>
         <div>
-          <a href="#" data-toggle="modal" data-target="#modalSaludo"><img src="/img/car/4.jpg" alt=""></a>
+          <a href="#" data-toggle="modal" data-target="#modalBuzos"><img src="/img/car/buzos.jpg" alt="presentación de buzos de egresados"></a>
         </div>
-      </div>
+        <div>
+          <a href="#" data-toggle="modal" data-target="#modalEscuadras"><img src="/img/car/escuadras.jpg" alt="escuadras de educación física"></a>
+        </div>
+        <div>
+          <a href="./covid"><img src="/img/car/campus.jpg" alt="ingreso al campus virtual"></a>
+        </div>
+        <div>
+          <a href="#" data-toggle="modal" data-target="#modalFlieger"><img src="/img/car/flieger.jpg" alt="video musical das fliegerlied aleman"></a>
+        </div>
+        <div>
+          <a href="#" data-toggle="modal" data-target="#modalSaludo"><img src="/img/car/4.jpg" alt="saludos de los docentes"></a>
+        </div>
+      </div> <!-- fin carrusel Mobile -->
     </section>
 
+    <!-- botones menu -->
     <section id="menu-btn">
       <div class="row h-100">
         <div class="col">
@@ -277,6 +352,7 @@
       </div>
     </section>
 
+    <!-- cuadros guias desktop -->
     <section id="niveles">
       <div class="row">
         <div class="col">
@@ -384,6 +460,8 @@
       </div>
     </section>
 
+    <!-- cuadros guias mobile -->
+
     <section id="cuadros">
       <div class="row m-0">
         <div class="col-sm-6 w-50">
@@ -463,17 +541,19 @@
       </div>
     </section>
 
+    <!-- logos afiliados -->
     <section id="afiliados">            
-      <img class="img-fluid" src="/img/afiliados/9.jpg" alt="img afiliados">
       <img class="img-fluid" src="/img/afiliados/1.svg" alt="img afiliados">
-      <img class="img-fluid" src="/img/afiliados/2.svg" alt="img afiliados">
+      <img class="img-fluid" src="/img/afiliados/7.svg" alt="img afiliados">    
+      <br>
       <img class="img-fluid" src="/img/afiliados/3.svg" alt="img afiliados">
       <img class="img-fluid" src="/img/afiliados/1.png" alt="img afiliados">    
-      <img class="img-fluid" src="/img/afiliados/4.svg" alt="img afiliados">
       <img class="img-fluid" src="/img/afiliados/5.svg" alt="img afiliados">
       <img class="img-fluid" src="/img/afiliados/6.svg" alt="img afiliados">
-      <img class="img-fluid" src="/img/afiliados/7.svg" alt="img afiliados">    
+      <img class="img-fluid" src="/img/afiliados/9.jpg" alt="img afiliados">
     </section>
+
+    <!-- formulario de contacto -->
 
     <section id="contact">
       <div class="row py-3 border-t bg-white">
@@ -612,11 +692,13 @@
       </div>
     </section>
 
+    <!-- footer -->
+
     <section id="footer">
       <div class="row m-0 h-100">
         <div class="col-sm-8 align-self-center">
           <ul class="m-auto">
-            <li><a class="btn btn-gart" href="http://mail.google.com/a/colegiociudadjardin.edu.ar">Web Mail</a></li>
+            <li><a class="btn btn-gart" href="https://mail.google.com/a/colegiociudadjardin.edu.ar">Web Mail</a></li>
             <li><a class="btn btn-gart" href="./login">Campus Virtual</a></li>
             <li><a class="btn btn-gart disabled" href="./comollegar">Como llegar</a></li>
             <li>
@@ -675,7 +757,7 @@
       </div>
     </div>
 
-    <!-- Modal Éxito -->
+    <!-- Modal Mensaje Exitoso -->
 
     <div class="modal fade" id="modalExito" tabIndex="-1" role="dialog" aria-labelledby="modalExito" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
@@ -762,23 +844,98 @@
         </div>
       </div>
     </div>
+
+    <!-- Modal Acto -->
+
+    <div class="modal fade" id="modalActo" tabIndex="-1" role="dialog" aria-labelledby="modalActo" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Seleccione el nivel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Ingrese a la versión del acto del 25 de Mayo correspondiente a su nivel.
+            </p>
+            <a href="./ActoSecundaria" class="btn btn-lg btn-block" style="background-color: #ccc;">Secundaria</a>
+            <a href="./ActoPrimaria" class="btn btn-lg btn-block btn-primary">Primaria</a>
+            <a href="./ActoInicial" class="btn btn-lg btn-block btn-danger">Inicial</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Musica 25 Mayo -->
+
+    <div class="modal fade" id="modal25M" tabIndex="-1" role="dialog" aria-labelledby="modal25M" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Seleccione el nivel</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Ingrese a la versión del video correspondiente a su nivel.
+            </p>
+            <a href="#" data-toggle="modal" data-target="#modal25M-secundaria" class="btn btn-lg btn-block" style="background-color: #ccc;">Secundaria</a>
+            <a href="#" data-toggle="modal" data-target="#modal25M-primaria" class="btn btn-lg btn-block btn-primary">Primaria</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal diferenciar primaria y secundaria ¿? -->
+
+    <div class="modal fade" id="modal25M-primaria" tabIndex="-1" role="dialog" aria-labelledby="modal25M-primaria" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">          
+          <iframe width="100%" height="720" src="https://www.youtube.com/embed/7sh4TZULrMk" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; controls" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modal25M-secundaria" tabIndex="-1" role="dialog" aria-labelledby="modal25M-secundaria" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">          
+          <iframe width="100%" height="720" src="https://www.youtube.com/embed/ge7i4Ckhxu0" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; controls" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal Inglés -->
+
+    <div class="modal fade" id="modalIngles" tabIndex="-1" role="dialog" aria-labelledby="modalIngles" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">          
+          <iframe width="100%" height="450" src="https://www.youtube.com/embed/leWLMuJrbJE" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; controls" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
     
     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="/slick/slick.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <script type="text/javascript">
       $('.carru').slick({
         dots: true,
         arrows: true,
         autoplay: true,
         fade: true,
+        lazyLoad: 'progressive',
         infinite: true,
         autoplaySpeed: 4500,
         speed: 1500
       });
     </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
+    
+    <!-- refresh en ciertos modals -->
     <script>
       $('#modalSaludo').on('hide.bs.modal', function (e) {
         location.reload();
@@ -794,11 +951,19 @@
         location.reload();
       })
     </script>
+
+    <!-- creación de tooltips -->
     <script>
       $(function () {
         $('[data-toggle="tooltip"]').tooltip()
       });
     </script>
-    
+
+    <!-- Carga del loader -->
+    <script>
+      $(window).on("load", function(){
+        $(".loader").fadeOut("slow");
+      });
+    </script>
   </body>
 </html>
