@@ -578,6 +578,9 @@ button:focus,
   background-size: 180px;
   opacity: 1;
 }
+#tour{
+  overflow: hidden!important;
+}
 
 @media only screen and (max-width:1440px){
   #navbarGart .btn{
