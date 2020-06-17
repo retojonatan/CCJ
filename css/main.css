@@ -608,6 +608,9 @@ button:focus,
     width: 62%;
     margin-top: .5rem!important;
   }
+  #t360 iframe{
+    height: 88vh!important;
+  }
 }
 @media only screen and (max-width:1280px){
   #navbar .nav-link{
@@ -799,7 +802,6 @@ button:focus,
   #carrusel video,
   #carrusel img {
     height: 63vh;
-    object-fit: fill;
   }
   #menu-btn{
     height: 29vh;
