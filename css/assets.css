@@ -46,6 +46,10 @@ p {
     line-height: 1.3;
 }
 
+a:hover{
+    text-decoration: none;
+}
+
 .contenedor {
     padding: 70px 250px 150px 250px;
 }
@@ -215,6 +219,17 @@ p {
 #title-carousel {
     background-color: rgb(255, 59, 48);
     color: white;
+}
+
+/* PARALLAX */
+
+#plx{
+    padding: 5rem;
+    height: 500px;
+    background-position: center;
+    background-attachment: fixed;
+    background-color: aqua;
+    background-size: cover;
 }
 
 @media only screen and (max-width:1600px) {
