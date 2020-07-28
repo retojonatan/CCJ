@@ -684,7 +684,7 @@ button:focus,
   height: 250px;
   object-fit: scale-down;
   float: right;
-  padding-left: 70px;
+  padding: 30px;
 }
 
 /* DATA */
