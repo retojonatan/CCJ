@@ -287,11 +287,12 @@ a:hover{
     }
 
     #cards-m {
-        margin: 60px 95px;
+        margin: 60px 0;
     }
 
     #cards-m .card {
         margin: 0 10px;
+        min-width: 230px;
     }
 
     #horarios .col h4 {
@@ -361,7 +362,7 @@ a:hover{
     }
 
     #cards-m .card {
-        margin: 10px
+        margin: 10px;
     }
 
     #horarios .col {
