@@ -36,6 +36,7 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/assets.css">
     <link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
   </head>
@@ -70,9 +71,6 @@
                 <a class="dropdown-item" href="./musica">Departamento de Música</a>
                 <a class="dropdown-item disabled" href="./informatica">Departamento de Informática</a>
                 <a class="dropdown-item" href="./educacionfisica">Departamento de Educación Física</a>
-                <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="./orientacion">Equipo de Orientación Escolar</a>
-                <div class="dropdown-divider"></div>
                 <a class="dropdown-item" href="./secundaria">Dirección Nivel Secundaria</a>
                 <a class="dropdown-item" href="./primaria">Dirección Nivel Primaria</a>
                 <a class="dropdown-item" href="./inicial">Dirección Nivel Inicial</a>
@@ -192,11 +190,130 @@
       </nav>
     </section>
 
-    <section id="img-landing" class="container">
-      <div class="landing-img" style="background-image: url(/img/inicial/top.jpg); background-position: center;">
+    <section id="landing">
+      <div class="landing-img"
+        style="background-image: linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),url(/img/inicial/top.jpg);">
+        <h2>Nivel Inicial</h2>
+        <h5>Bienvenidos</h5>
+      </div>
+    </section>
+  
+    <section id="intro-text">
+      <div class="contenedor">
+        <h3 class="text-center mb-5">Nuestra Propuesta</h3>
+        <p>
+          Nuestra propuesta pedagógica contempla una educación integral, ofreciendo una amplia variedad de actividades que preparan a nuestros alumnos para afrontar un mundo en permanente cambio. <br>
+          El jardín prioriza la teoría enriquecida por la corriente de Lev Vygotski, como referente de la psicología del desarrollo y David Ausubel, psicólogo y pedagogo estadounidense. <br>
+          Dos miradas constructivistas que ponen el foco en generar andamiajes bajo una enseñanza orientada a la acción. <br>
+          A lo largo de nuestra trayectoria educativa nos hemos propuesto:<br>
+        </p>
+          <p class="text-center">
+        <i>
+          Cuidar con dedicación, estimular con entusiasmo y enseñar con profesionalismo.
+        </i>
+        </p>
+      </div>
+    </section>
+  
+    <section id="title-cards" class="c-amarillo">
+      <div class="mx-4 p-5">
+        <h2 class="text-center mb-5">Actividades</h2>
+        <div class="card-deck card-deck-primaria mb-5">
+          <div class="card">
+            <img src="/img/primaria/matem.jpg" class="card-img-top" alt="/img/primaria/matem.jpg">
+            <div class="card-body">
+              <h5 class="card-title">
+                Visitas
+              </h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolor dignissimos magni et architecto, quis exercitationem delectus labore dolorem sapiente.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/img/primaria/salidas.jpg" class="card-img-top" alt="/img/primaria/salidas.jpg">
+            <div class="card-body">
+              <h5 class="card-title">Talleres</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolor dignissimos magni et architecto, quis exercitationem delectus labore dolorem sapiente.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/img/primaria/proyectos.jpg" class="card-img-top" alt="/img/primaria/proyectos.jpg">
+            <div class="card-body">
+              <h5 class="card-title"> Proyectos</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolor dignissimos magni et architecto, quis exercitationem delectus labore dolorem sapiente.</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="/img/primaria/tecno.jpg" class="card-img-top" alt="/img/primaria/tecno.jpg">
+            <div class="card-body">
+              <h5 class="card-title"> Muestras y Eventos</h5>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est dolor dignissimos magni et architecto, quis exercitationem delectus labore dolorem sapiente.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="horarios">
+      <div class="contenedor">
+        <h2 class="landing-title text-center mb-5">Jornada Simple y Completa</h2>
+        <div class="mx-2">
+          <p>
+            El horario de la jornada simple es de 8 a 11:20hs (sala de 1), a 11:30(sala de 2), a 11:35hs (sala de 3) y 11:40hs. (sala de 4).
+          </p>
+          <p>
+            La jornada completa es opcional para las salas de 1, 2, 3 y 4 años y obligatoria para sala de 5 años.
+          </p>
+          <p>
+            La jornada completa es de 8 a 16:20hs. (sala de 1 y 2) 16:30hs. (salas de 3, 4 y 5 años)
+            Almuerzo de 12 a 13hs. (En casa, con vianda o menú del comedor)
+            Salas de 1, 2 y 3: Siesta de 13 a 15hs.
+          </p>
+        </div>
+        <div class="row my-4">
+          <div class="col text-center mt-5">
+            <i class="far fa-clock fa-5x mb-4 t-celeste"></i>
+            <h4 class="font-weight-bolder t-celeste">
+              Horario <br> Entrada
+            </h4>
+            <h3 class="btn c-celeste text-white btn-horario">
+              07:20 - 11:30
+            </h3>
+          </div>
+          <div class="col text-center mt-5">
+            <i class="fa fa-utensils fa-5x mb-4 t-amarillo"></i>
+            <h4 class="font-weight-bolder t-amarillo">
+              Almuerzo y <br> Siesta
+            </h4>
+            <h3 class="btn c-amarillo text-white btn-horario">
+              12:00 - 15:00
+            </h3>
+            <h3 class="btn c-amarillo text-white btn-horario">
+              12:30 - 13:30
+            </h3>
+          </div>
+          <div class="col text-center mt-5">
+            <i class="fa fa-house-user fa-5x mb-4 t-rojo"></i>
+            <h4 class="font-weight-bolder t-rojo">
+              Horario<br> Salida
+            </h4>
+            <h3 class="btn c-rojo text-white btn-horario">
+              12:30 - 16:20
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <section id="title">
+      <div class="contenedor c-verde text-white text-center">
+        <h3 class="landing-title text-center mb-5">Otras Actividades</h3>
+        <p class="mx-5 text-center">Encontrá más información sobre todas las actividades que se realizan en el nivel
+          primario.</p>
+        <a href="#" class="btn btn-outline-light px-5 my-4">VER MÁS</a>
       </div>
     </section>
 
+    -----------------------
     <section id="data" class="mb-5">
       <div class="container py-3">
         <div class="card card-body p-5">
