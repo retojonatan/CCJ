@@ -42,6 +42,9 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <!-- Carga del loader -->
   <script>
+    setTimeout(function(){
+    $(".loader").fadeOut("slow");
+      }, 7000);
     $(window).on("load", function () {
       $(".loader").fadeOut("slow");
     });
@@ -55,30 +58,21 @@
 
   <!-- Facebook Pixel Code -->
   <script>
-    ! function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () {
-        n.callMethod ?
-          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
-      };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }(window, document, 'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '317371079455822');
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window,document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '317371079455822'); 
     fbq('track', 'Home');
   </script>
   <noscript>
-    <img height="1" width="1" src="https://www.facebook.com/tr?id=317371079455822&ev=Home
-    &noscript=1" />
+    <img height="1" width="1" 
+    src="https://www.facebook.com/tr?id=317371079455822&ev=PageView
+    &noscript=1"/>
   </noscript>
   <!-- End Facebook Pixel Code -->
 </head>
@@ -184,11 +178,27 @@
   <section id="carrusel">
     <div class="carru" id="campus-fhd">
       <div>
-        <a href="./ActoInicial">
+        <a href="https://drive.google.com/file/d/1ALZQwpsz906OvOnrWG252TgyMJg88-ku/view?usp=sharing" target="_blank">
+          <div class="cuadrito">
+            <p>MIRÁ EL PROGRAMA</p>
+          </div>
+          <img src="/img/car/unidadalemana-fhd.jpg" alt="imagen semana de la unidad alemana">
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=4gMtbQJ-uME&ab_channel=ColegioGartenstadtSchule" target="_blank">
           <div class="cuadrito">
             <p>¡IR AL ACTO!</p>
           </div>
-          <img src="/img/car/acto-fhd.jpg" alt="imagen del acto San Martín">
+          <img src="/img/car/acto-fhd.jpg" alt="imagen del acto del dia del maestro">
+        </a>
+      </div>
+      <div>
+        <a href="#" data-toggle="modal" data-target="#modalExtra">
+          <div class="cuadrito">
+            <p>¡MIRÁ EL VIDEO!</p>
+          </div>
+          <img src="/img/car/extra-fhd.jpg" alt="imagen video semanal">
         </a>
       </div>
       <div>
@@ -222,11 +232,27 @@
     <!-- Carrusel HD -->
     <div class="carru" id="campus-hd">
       <div>
-        <a href="./ActoInicial">
+        <a href="https://drive.google.com/file/d/1ALZQwpsz906OvOnrWG252TgyMJg88-ku/view?usp=sharing" target="_blank">
+          <div class="cuadrito">
+            <p>MIRÁ EL PROGRAMA</p>
+          </div>
+          <img src="/img/car/unidadalemana-hd.jpg" alt="imagen semana de la unidad alemana">
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=4gMtbQJ-uME&ab_channel=ColegioGartenstadtSchule" target="_blank">
           <div class="cuadrito">
             <p>¡IR AL ACTO!</p>
           </div>
-          <img src="/img/car/acto-hd.jpg" alt="imagen del acto San Martín">
+          <img src="/img/car/acto-hd.jpg" alt="imagen del acto por el dia del maestro">
+        </a>
+      </div>
+      <div>
+        <a href="#" data-toggle="modal" data-target="#modalExtra">
+          <div class="cuadrito">
+            <p>¡MIRÁ EL VIDEO!</p>
+          </div>
+          <img src="/img/car/extra-hd.jpg" alt="imagen video semanal">
         </a>
       </div>
       <div>
@@ -260,7 +286,19 @@
     <!-- Carrusel Mobile -->
     <div class="carru" id="campus">
       <div>
-        <a href="./ActoInicial"><img src="/img/car/acto.jpg" alt="imagen del acto San Martín"></a>
+        <a href="https://drive.google.com/file/d/1ALZQwpsz906OvOnrWG252TgyMJg88-ku/view?usp=sharing" target="_blank">
+          <div class="cuadrito">
+            <p>MIRÁ EL PROGRAMA</p>
+          </div>
+          <img src="/img/car/unidadalemana.jpg" alt="imagen semana de la unidad alemana">
+        </a>
+      </div>
+      <div>
+        <a href="https://www.youtube.com/watch?v=4gMtbQJ-uME&ab_channel=ColegioGartenstadtSchule" target="_blank"><img src="/img/car/acto.jpg" alt="imagen del acto del maestro"></a>
+      </div>
+      <div>
+        <a href="#" data-toggle="modal" data-target="#modalExtra"><img src="/img/car/extra.jpg"
+            alt="imagen video semanal"></a>
       </div>
       <div>
         <a href="#" data-toggle="modal" data-target="#modal550"><img src="/img/car/video.jpg"
@@ -1001,7 +1039,7 @@
   <div class="modal fade" id="modal550" tabIndex="-1" role="dialog" aria-labelledby="modal550" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <iframe width="100%" height="550" src="https://www.youtube.com/embed/W62m8I54_Ec" frameborder="0"
+        <iframe width="100%" height="550" src="https://www.youtube.com/embed/VjKy6C0pkzE" frameborder="0"
           allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; controls" allowfullscreen></iframe>
       </div>
     </div>
@@ -1012,7 +1050,7 @@
   <div class="modal fade" id="modalExtra" tabIndex="-1" role="dialog" aria-labelledby="modalExtra" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
       <div class="modal-content">
-        <iframe width="100%" height="550" src="https://www.youtube.com/embed/3lhtgRHE3JU" frameborder="0"
+        <iframe width="100%" height="550" src="https://www.youtube.com/embed/xpQ0uxQ1GpI" frameborder="0"
           allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; controls" allowfullscreen></iframe>
       </div>
     </div>
