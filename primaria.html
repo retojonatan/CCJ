@@ -45,23 +45,32 @@
   <link rel="stylesheet" href="/css/assets.css">
   <link rel="stylesheet" type="text/css" href="/slick/slick.css" />
   <link rel="stylesheet" type="text/css" href="/slick/slick-theme.css" />
-<!-- Facebook Pixel Code -->
+  <!-- Facebook Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '317371079455822'); 
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '317371079455822');
     fbq('track', 'PageView');
   </script>
   <noscript>
-    <img height="1" width="1" 
-    src="https://www.facebook.com/tr?id=317371079455822&ev=PageView
-    &noscript=1"/>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=317371079455822&ev=PageView
+    &noscript=1" />
   </noscript>
   <!-- End Facebook Pixel Code -->
 </head>
@@ -85,7 +94,7 @@
             <div class="dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink">
               <a class="dropdown-item" href="./nuestrocolegio#director">Nuestro director</a>
               <a class="dropdown-item" href="./nuestrocolegio#staff">Staff</a>
-              <a class="dropdown-item" href="./nuestrocolegio#historia">Historia</a>  
+              <a class="dropdown-item" href="./nuestrocolegio#historia">Historia</a>
               <a class="dropdown-item" href="./nuestrocolegio#calendario">Calendario escolar</a>
             </div>
           </li>
@@ -100,7 +109,7 @@
               <a class="dropdown-item" href="./musica">Departamento de Música</a>
               <a class="dropdown-item disabled" href="./informatica">Departamento de Informática</a>
               <a class="dropdown-item" href="./educacionfisica">Departamento de Educación Física</a>
-              
+
               <a class="dropdown-item" href="./secundaria">Dirección Nivel Secundaria</a>
               <a class="dropdown-item" href="./primaria">Dirección Nivel Primaria</a>
               <a class="dropdown-item" href="./inicial">Dirección Nivel Inicial</a>
@@ -147,11 +156,11 @@
                 aria-expanded="false">
                 NUESTRO COLEGIO
               </button>
-              <div class="dropdown-menu bg-transparente pt-4 mt-n1">                
+              <div class="dropdown-menu bg-transparente pt-4 mt-n1">
                 <a class="dropdown-item text-white" href="./nuestrocolegio#director">Nuestro director</a>
                 <a class="dropdown-item text-white" href="./nuestrocolegio#staff">Staff</a>
                 <a class="dropdown-item text-white" href="./nuestrocolegio#historia">Historia</a>
-                <a class="dropdown-item text-white" href="./nuestrocolegio#calendario">Calendario escolar</a>                
+                <a class="dropdown-item text-white" href="./nuestrocolegio#calendario">Calendario escolar</a>
               </div>
             </div>
           </div>
@@ -167,7 +176,7 @@
                 <a class="dropdown-item text-white" href="./musica">Departamento de Música</a>
                 <a class="dropdown-item text-white disabled" href="./informatica">Departamento de Informática</a>
                 <a class="dropdown-item text-white" href="./educacionfisica">Departamento de Educación Física</a>
-                
+
                 <a class="dropdown-item text-white" href="./secundaria">Dirección Nivel Secundaria</a>
                 <a class="dropdown-item text-white" href="./primaria">Dirección Nivel Primaria</a>
                 <a class="dropdown-item text-white" href="./inicial">Dirección Nivel Inicial</a>
@@ -229,8 +238,8 @@
   <section id="landing">
     <div class="landing-img"
       style="background-image: linear-gradient(rgba(0,0,0,.15), rgba(0,0,0,.15)),url(/img/primaria/top.jpg);">
-      <h2>Dirección de Primaria</h2>
-      <h5>Bienvenidos</h5>
+      <h2 class="landing-title">Nivel Primario</h2>
+      <h5 class="landing-subtitle">¡Bienvenidos!</h5>
     </div>
   </section>
 
@@ -241,89 +250,156 @@
         El Proyecto educativo del Nivel Primario ha sido pensado a partir de la premisa de educación integral. Así, la
         formación conjuga aspectos cognitivos, valorativos, socio-afectivos, expresivos y físicos de los niños, a partir
         de la motivación por el conocimiento, la indagación, la experimentación, la construcción del pensamiento y el
-        placer por el aprendizaje.
-        En esta etapa clave, el esfuerzo está dirigido prioritariamente al desarrollo de la personalidad, promoviendo
-        valores como la responsabilidad frente al estudio y el trabajo autónomo y cooperativo. Siendo los propios
-        alumnos partícipes principales de sus aprendizajes.
+        placer por el aprendizaje. En esta etapa clave, el esfuerzo está dirigido prioritariamente al desarrollo de la
+        personalidad, promoviendo valores como la responsabilidad frente al estudio y el trabajo autónomo y cooperativo.
+        Siendo los propios alumnos partícipes principales de sus aprendizajes.
       </p>
     </div>
   </section>
 
-  <section id="title-cards" class="c-amarillo">
+  <section class="c-amarillo text-white">
+    <div class="contenedor">
+      <h3 class="text-center">
+        El Idioma
+      </h3>
+      <p>
+        El nivel primario cuenta con educación
+        <span class="bg-white t-amarillo font-weight-bold px-2"><i> bilingüe en inglés.</i></span> Es decir,
+        que tienen materias como lengua, literatura ciencias en el idioma. Además, los
+        alumnos participan en diferentes actividades, como el Concert y obras de
+        teatro. Los estudiantes de 6to grado, cuentan con la posibilidad de rendir un
+        <span class="bg-white t-amarillo font-weight-bold px-2"><i>exámen internacional</i></span> de nivel A2.
+      </p>
+      <p>
+        En cuanto al alemán, los alumnos tienen
+        <span class="bg-white t-amarillo font-weight-bold px-2"><i>clases x veces a la semana,</i></span> con el
+        objetivo de poder aprenderlo
+        fluidamente, desde una edad temprana. Al alcanzar 6to grado, los estudiantes tienen la posibilidad de rendir un
+        <span class="bg-white t-amarillo font-weight-bold px-2"><i>exámen internacional</i></span> de nivel A2.
+      </p>
+      <div class="text-center">
+        <a href="./deutsch" class="btn btn-lg btn-light text-warning mx-3" style="border-radius: 10px;">Más info de
+          Alemán</a>
+        <a href="./english" class="btn btn-lg btn-light text-warning mx-3" style="border-radius: 10px;">Más info de
+          Inglés</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="title-cards" class="c-rojo">
     <div class="mx-4 p-5">
-      <h2 class="text-center mb-5">Actividades</h2>
-      <div class="card-deck card-deck-primaria mb-5">
+      <h3 class="text-center mb-5 text-white">Actividades</h3>
+      <div class="card-deck mb-5">
         <div class="card">
-          <a href="../primaria/matematicas" class="text-dark">
-            <img src="/img/primaria/matem.jpg" class="card-img-top" alt="/img/primaria/matem.jpg">
-            <div class="card-body">
-              <h5 class="card-title">
-                Matemáticas
-              </h5>
-              <p>En el Nivel Primario, los alumnos tienen un espacio donde se estimula la resolución de situaciones
-                problemáticas, aplicando un razonamiento lógico matemático y teniendo en cuenta los saberes previos de
-                los niños...</p>
-            </div>
-          </a>
+          <img src="/img/primaria/matem.jpg" class="card-img-top" alt="matematicas">
+          <div class="card-body pb-2">
+            <h5 class="card-title">
+              Matemática
+            </h5>
+            <p>
+              Los alumnos tienen un espacio donde se estimula la resolución de situaciones problemáticas. En ese
+              encuentro, los estudiantes comparten entre ellos las diferentes estrategias utilizadas y el modo personal
+              de razonar e interpretar el problema.
+            </p>
+          </div>
+          <div class="card-footer text-center border-0 bg-transparent pt-0">
+            <a href="../primaria/actividades" class="btn btn-dark">Ver más</a>
+          </div>
         </div>
         <div class="card">
-          <a href="../primaria/salidas" class="text-dark">
-            <img src="/img/primaria/salidas.jpg" class="card-img-top" alt="/img/primaria/salidas.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Salidas Educativas</h5>
-              <p>En el Nivel Primario realizamos salidas educativas en los diferentes años.
-                Compartimos algunas de nuestras vivencias en el Planetario y en el Museo de los
-                Inmigrantes plasmadas en imágenes...</p>
-            </div>
-          </a>
+          <img src="/img/primaria/salidas.jpg" class="card-img-top" alt="Salidas">
+          <div class="card-body pb-2">
+            <h5 class="card-title">Salidas Educativas</h5>
+            <p>
+              Planificamos salidas que favorezcan el pensamiento crítico y que permita vincular los nuevos conceptos con
+              la realidad social. Suelen organizarse dentro del marco institucional, teniendo en cuenta la planificación
+              anual que preparan año a año nuestros docentes y también las características e intereses de los alumnos.
+            </p>
+          </div>
+          <div class="card-footer text-center border-0 bg-transparent pt-0">
+            <a href="../primaria/actividades" class="btn btn-dark">Ver más</a>
+          </div>
         </div>
         <div class="card">
-          <a href="../primaria/proyectos" class="text-dark">
-            <img src="/img/primaria/proyectos.jpg" class="card-img-top" alt="/img/primaria/proyectos.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Presentación de Proyectos</h5>
-              <p>El Aprendizaje Basado en Proyectos (ABP) es una metodología de aprendizaje en la que los alumnos
-                adquieren un rol activo y se favorece la motivación académica.
-                Los estudiantes pueden participar, hablar y dar su opinión...</p>
-            </div>
-          </a>
+          <img src="/img/primaria/muestras y eventos.jpg" class="card-img-top" alt="muestras y eventos">
+          <div class="card-body pb-2">
+            <h5 class="card-title">Muestras y Eventos</h5>
+            <p>
+              Permite a los alumnos adquirir los conocimientos para la elaboración de proyectos que dan respuesta a
+              problemas de la vida real. Se convierten en protagonistas de su propio aprendizaje y desarrollan su
+              autonomía y responsabilidad, ya que son ellos los encargados de planificar, estructurar el trabajo y
+              elaborar el producto para resolver cada uno de los planteos.
+            </p>
+          </div>
+          <div class="card-footer text-center border-0 bg-transparent pt-0">
+            <a href="../primaria/actividades" class="btn btn-dark">Ver más</a>
+          </div>
         </div>
         <div class="card">
-          <a href="../primaria/tecnologia" class="text-dark">
-            <img src="/img/primaria/tecno.jpg" class="card-img-top" alt="/img/primaria/tecno.jpg">
-            <div class="card-body">
-              <h5 class="card-title">Informática y Tecnología</h5>
-              <p>La educación tecnológica como un área de conocimientos ya se encuentra establecida en lo
-                escolar proponiendo un campo de reflexión permitiendo apropiarse de los conocimientos del
-                espacio curricular...</p>
-            </div>
-          </a>
+          <img src="/img/primaria/tecno.jpg" class="card-img-top" alt="proyectos inicial">
+          <div class="card-body pb-2">
+            <h5 class="card-title">Informática y Tecnología</h5>
+            <p>
+              La tecnología en la educación primaria de nuestro colegio ayuda a optimizar el tiempo y la calidad de las
+              tareas de los alumnos pero también de los profesionales, haciendo que sus clases sean más atractivas e
+              innovadoras.
+            </p>
+          </div>
+          <div class="card-footer text-center border-0 bg-transparent pt-0">
+            <a href="../primaria/actividades" class="btn btn-dark">Ver más</a>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="title-img-bot">
+  <section class="d-none">
     <div class="contenedor">
-      <h2 class="text-center mb-5">Plan de Estudio</h2>
-      <p class="mx-5 text-center">Ciclo oficial, en el que se jerarquiza la construcción del conocimiento de cada área
-        disciplinar, respetando sus didácticas específicas. Siendo nuestro plan de estudios Bilingüe en Inglés y segunda
-        lengua extranjera en Alemán.</p>
+      <h3 class="text-center">Música y Arte</h3>
+      <p>...</p>
+      <div class="text-center">
+        <a href="#" class="btn btn-dark py-2 px-3">Ver más</a>
+      </div>
     </div>
   </section>
 
-  <section id="horarios">
+  <section class="c-celeste text-white d-none">
     <div class="contenedor">
-      <h2 class="landing-title text-center mb-5">Jornada Completa</h2>
-      <div class="mx-2">
-        <p>
-          Los horarios de ingreso y salida, para todos los alumnos del nivel primario, es de 7:20 a 16:20 hs.
-        </p>
-        <p>
-          Los alumnos cuentan con un espacio de transición destinado al almuerzo y recreación de una hora. Primer ciclo
-          11:30hs, segundo ciclo 12:30hs.
-        </p>
+      <h3 class="text-center">Educación Física</h3>
+      <p>...</p>
+      <div class="text-center">
+        <a href="#" class="btn btn-light t-celeste py-2 px-3">Ver más</a>
       </div>
+    </div>
+  </section>
+
+  <section class="c-amarillo text-white d-none">
+    <div class="contenedor">
+      <h3 class="text-center">Equipo de Orientación Escolar</h3>
+      <p>...</p>
+      <div class="text-center">
+        <a href="#" class="btn btn-light t-amarillo py-2 px-3">Ver más</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="c-rojo text-white text-center" id="horarios">
+    <div class="contenedor">
+      <h3 class="landing-title mb-2">La Jornada</h3>
+      <h5 class="font-weight-bolder"> Jornada completa: 07:20 - 16:20</h5>
+      <p class="font-italic font-weight-lighter mt-2">
+        Cuenta con una hora de almuerzo
+      </p>
+      <ul>
+        <li style="list-style-position: inside; font-size: 22px;">1er Ciclo: 11:30 a 12:30 de lunes a jueves y 12:30 a
+          13:30 los viernes.</li>
+        <li style="list-style-position: inside; font-size: 22px;">2do Ciclo: 12:30 a 13:30 de lunes a jueves y 11:30 a
+          12:30 los viernes.</li>
+      </ul>
+    </div>
+  </section>
+  <section>
+    <div class="contenedor">
       <div class="row my-4">
         <div class="col text-center mt-5">
           <i class="far fa-clock fa-5x mb-4 t-celeste"></i>
@@ -331,7 +407,7 @@
             Horario <br> Entrada
           </h4>
           <h3 class="btn c-celeste text-white btn-horario">
-            07:20 - 11:30
+            07:20
           </h3>
         </div>
         <div class="col text-center mt-5">
@@ -352,19 +428,19 @@
             Horario<br> Salida
           </h4>
           <h3 class="btn c-rojo text-white btn-horario">
-            12:30 - 16:20
+            16:20
           </h3>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="title">
-    <div class="contenedor c-verde text-white text-center">
-      <h3 class="landing-title text-center mb-5">Otras Actividades</h3>
-      <p class="mx-5 text-center">Encontrá más información sobre todas las actividades que se realizan en el nivel
-        primario.</p>
-      <a href="../primaria/actividades" class="btn btn-outline-light px-5 my-4">VER MÁS</a>
+  <section class="c-amarillo text-white text-center pt-2 d-none">
+    <div class="pt-4">
+      <h3>Las Aulas</h3>
+      <div id="carrusel" class="p-0">
+        <div><img src="" alt="imagen de laternenfest 1"></div>
+      </div>
     </div>
   </section>
 
@@ -388,7 +464,7 @@
               </div>
             </div>
           </li>
-          <li><a class="btn btn-gart" href="./Tour">Tour 360! <span class="badge badge-danger">Nuevo</span></a></li>
+          <li><a class="btn btn-gart" href="./Tour">Tour 360</a></li>
         </ul>
       </div>
       <div class="col-sm-3 offset-sm-1 ml-auto my-auto text-right align-self-center">

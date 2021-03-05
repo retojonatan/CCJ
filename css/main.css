@@ -253,6 +253,7 @@ body {
 
 #menu-btn .btn,
 #menu-btn button {
+  font-size: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -277,6 +278,8 @@ body {
 }
 
 #menu-btn .dropdown-menu {
+  font-size: 14px;
+  border-radius: 12px;
   font-weight: 900;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.15) !important;
   margin-top: 0px !important;
@@ -375,6 +378,12 @@ body {
 .btn-info,
 .c-celeste {
   background-color: #5ac8fa;
+}
+
+a.c-celeste:hover {
+  border: 1px solid #5ac8fa;
+  background-color: white;
+  color: #5ac8fa !important;
 }
 
 .t-celeste {

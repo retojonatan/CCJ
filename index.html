@@ -44,9 +44,9 @@
     integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <!-- Carga del loader -->
   <script>
-    setTimeout(function(){
-    $(".loader").fadeOut("slow");
-      }, 7000);
+    setTimeout(function () {
+      $(".loader").fadeOut("slow");
+    }, 7000);
     $(window).on("load", function () {
       $(".loader").fadeOut("slow");
     });
@@ -60,21 +60,30 @@
 
   <!-- Facebook Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window,document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '317371079455822'); 
+    ! function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '317371079455822');
     fbq('track', 'Home');
   </script>
   <noscript>
-    <img height="1" width="1" 
-    src="https://www.facebook.com/tr?id=317371079455822&ev=PageView
-    &noscript=1"/>
+    <img height="1" width="1" src="https://www.facebook.com/tr?id=317371079455822&ev=PageView
+    &noscript=1" />
   </noscript>
   <!-- End Facebook Pixel Code -->
 </head>
@@ -180,6 +189,14 @@
   <section id="carrusel">
     <div class="carru" id="campus-fhd">
       <div>
+        <a href="https://youtu.be/nhQI7kmIJPE" target="_blank">
+          <div class="cuadrito">
+            <p>¡VER VIDEO!</p>
+          </div>
+          <img src="/img/car/video-fhd.jpg" alt="Imagen del musical CCJ">
+        </a>
+      </div>
+      <div>
         <a href="https://youtu.be/1BfH7xnsCRk" data-toggle="modal" data-target="#modalExtra">
           <div class="cuadrito">
             <p>¡VER VIDEO!</p>
@@ -188,19 +205,12 @@
         </a>
       </div>
       <div>
-        <a href= "https://view.genial.ly/5f57b8fc1835080da969ed85/learning-experience-challenges-diversidad" target="_blank">
+        <a href="https://view.genial.ly/5f57b8fc1835080da969ed85/learning-experience-challenges-diversidad"
+          target="_blank">
           <div class="cuadrito">
             <p>¡IR AL ACTO!</p>
           </div>
           <img src="/img/car/actodiversidad-fhd.jpg" alt="imagen acto diversidad cultural">
-        </a>
-      </div>
-      <div>
-        <a href= "https://youtu.be/708Eu-14nZ4" target="_blank">
-          <div class="cuadrito">
-            <p>¡IR AL ACTO!</p>
-          </div>
-          <img src="/img/car/video-fhd.jpg" alt="imagen acto diversidad cultural nivel inicial">
         </a>
       </div>
       <div>
@@ -234,6 +244,14 @@
     <!-- Carrusel HD -->
     <div class="carru" id="campus-hd">
       <div>
+        <a href="https://youtu.be/nhQI7kmIJPE" target="_blank">
+          <div class="cuadrito">
+            <p>¡VER VIDEO!</p>
+          </div>
+          <img src="/img/car/video-hd.jpg" alt="imagen video musical CCJ">
+        </a>
+      </div>
+      <div>
         <a href="#" data-toggle="modal" data-target="#modalActo">
           <div class="cuadrito">
             <p>¡IR AL ACTO!</p>
@@ -242,19 +260,12 @@
         </a>
       </div>
       <div>
-        <a href= "https://view.genial.ly/5f57b8fc1835080da969ed85/learning-experience-challenges-diversidad" target="_blank">
+        <a href="https://view.genial.ly/5f57b8fc1835080da969ed85/learning-experience-challenges-diversidad"
+          target="_blank">
           <div class="cuadrito">
             <p>¡IR AL ACTO!</p>
           </div>
           <img src="/img/car/actodiversidad-hd.jpg" alt="imagen acto diversidad cultural">
-        </a>
-      </div>
-      <div>
-        <a href= "https://youtu.be/708Eu-14nZ4" target="_blank">
-          <div class="cuadrito">
-               <p>¡IR AL ACTO!</p>
-          </div>
-          <img src="/img/car/video-hd.jpg" alt="imagen acto diversidad cultural nivel inicial">
         </a>
       </div>
       <div>
@@ -288,6 +299,14 @@
     <!-- Carrusel Mobile -->
     <div class="carru" id="campus">
       <div>
+        <a href="https://youtu.be/nhQI7kmIJPE" target="_blank">
+          <div class="cuadrito">
+            <p>¡VER VIDEO!</p>
+          </div>
+          <img src="/img/car/video.jpg" alt="imagen video musical CCJ">
+        </a>
+      </div>
+      <div>
         <a href="#" data-toggle="modal" data-target="#modalActo">
           <div class="cuadrito">
             <p>¡IR AL ACTO!</p>
@@ -308,153 +327,16 @@
     </div> <!-- fin carrusel Mobile -->
   </section>
 
-  <section id="fs-menu" class="animate__animated animate__slideInUp animate__faster">
-    <div class="w-100" id="fs-container">
-      <div class="container">
-        <button type="button" class="mt-n4 close">
-          <span class="h1 text-dark p-2" id="close-2">&times;</span>
-        </button>
-        <h1 class="titulo-menu">DEPARTAMENTOS</h1>
-        <ul>
-          <div class="row py-auto">
-            <div class="col">
-              <li class=" animate__animated animate__fadeInLeft">
-                <h2 class="h5 titulo-lista">
-                  <a href="./inicial">Departamento de Inicial</a>
-                </h2>
-                <ul>
-                  <li class="lista-act">
-                    <a href="./inicial">Salidas Educativas</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="./inicial">Muestras</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="./inicial">Otras Actividades</a>
-                  </li>
-                </ul>
-              </li>
-              <li class=" animate__animated animate__fadeInLeft">
-                <h2 class="h5 titulo-lista">
-                  <a href="./primaria">Departamento de Primaria</a>
-                </h2>
-                <ul>
-                  <li class="lista-act">
-                    <a href="../primaria/matematicas">Matemática</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="../primaria/salidas">Salidas Educativas</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="../primaria/proyectos">Presentación de Proyectos</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="../primaria/tecnologia">Informática y Tecnología</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="../primaria/actividades">Otras Actividades</a>
-                  </li>
-                </ul>
-              </li>
-              <li class=" animate__animated animate__fadeInLeft">
-                <h2 class="h5 titulo-lista">
-                  <a href="./secundaria">Departamento de Secundaria</a>
-                </h2>
-                <ul>
-                  <li class="lista-act">
-                    <a href="./secundaria">Actividades</a>
-                  </li>
-                </ul>
-              </li>
-            </div>
-            <div class="col">
-              <li class=" animate__animated animate__fadeInLeft">
-                <h2 class="h5 titulo-lista">
-                  <a href="./deutsch">Departamento de Alemán</a>
-                </h2>
-                <ul>
-                  <li class="lista-act">
-                    <a href="./deutsch">Exámenes Internacionales</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="./deutsch">Actividades de Nivel Inicial</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="./deutsch">Actividades de Nivel Primario</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="./deutsch">Actividades de Nivel Secundario</a>
-                  </li>
-                </ul>
-              </li>
-              <li class=" animate__animated animate__fadeInLeft">
-                <h2 class="h5 titulo-lista">
-                  <a href="./english">Departamento de Inglés</a>
-                </h2>
-                <ul>
-                  <li class="lista-act">
-                    <a href="./english">Exámenes Internacionales</a>
-                  </li>
-                </ul>
-              </li>
-              <li class=" animate__animated animate__fadeInLeft">
-                <h2 class="h5 titulo-lista">
-                  <a href="./musica">Departamento de Música</a>
-                </h2>
-                <ul>
-                  <li class="lista-act">
-                    <a href="./musica">Actividades</a>
-                  </li>
-                </ul>
-              </li>
-            </div>
-            <div class="col">
-              <li class=" animate__animated animate__fadeInLeft">
-                <h2 class="h5 titulo-lista">
-                  <a href="./educacionfisica">Departamento de Educación Física</a>
-                </h2>
-                <ul>
-                  <li class="lista-act">
-                    <a href="./educacionfisica">Actividades Deportivas</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="./educacionfisica">Campamentos</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="./educacionfisica">Encuentros y Torneos Deportivos</a>
-                  </li>
-                  <li class="lista-act">
-                    <a href="./educacionfisica">Interbandos</a>
-                  </li>
-                </ul>
-              </li>
-              <li class=" animate__animated animate__fadeInLeft">
-                <h2 class="h5 titulo-lista">
-                  <a href="#">Departamento de Informática</a>
-                </h2>
-                <ul>
-                  <li class="lista-act">
-                    <a href="#">Actividades</a>
-                  </li>
-                </ul>
-              </li>
-            </div>
-          </div>
-        </ul>
-      </div>
-    </div>
-  </section>
-
   <!-- Botones Menu Principal -->
   <section id="menu-btn">
     <div class="row h-100">
       <div class="col">
         <div class="btn-group dropup h-100 w-100">
           <button type="button" class="dropdown-toggle btn-block btn-primary rounded-0 h-100" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" data-display="static" id="menu-close1">
+            aria-haspopup="true" aria-expanded="false" data-display="static">
             Nuestro Colegio
           </button>
-          <div class="dropdown-menu bg-primary mb-2">
+          <div class="dropdown-menu bg-primary">
             <a class="dropdown-item text-white" href="./nuestrocolegio#director">Nuestro director</a>
             <a class="dropdown-item text-white" href="./nuestrocolegio#staff">Staff</a>
             <a class="dropdown-item text-white" href="./nuestrocolegio#historia">Historia</a>
@@ -464,55 +346,44 @@
       </div>
       <div class="col">
         <div class="btn-group dropup h-100 w-100">
-          <button type="button" class="dropdown-toggle btn-block btn-light rounded-0 h-100" data-toggle=""
-            aria-haspopup="true" aria-expanded="false" id="btn-2">
-            Departamentos
+          <button type="button" class="dropdown-toggle btn-block btn-light rounded-0 h-100" data-toggle="dropdown"
+            aria-haspopup="true" aria-expanded="false">
+            Niveles
           </button>
-          <div class="dropdown-menu bg-light mb-2">
-            <a class="dropdown-item" href="./deutsch">Departamento de Alemán</a>
-            <a class="dropdown-item" href="./english">Departamento de Inglés</a>
-            <a class="dropdown-item" href="./musica">Departamento de Música</a>
-            <a class="dropdown-item disabled" href="./informatica">Departamento de Informática</a>
-            <a class="dropdown-item" href="./educacionfisica">Departamento de Educación Física</a>
-            <div class="dropdown-divider"></div>
-
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="./secundaria">Dirección Nivel Secundaria</a>
-            <a class="dropdown-item" href="./primaria">Dirección Nivel Primaria</a>
-            <a class="dropdown-item" href="./inicial">Dirección Nivel Inicial</a>
+          <div class="dropdown-menu bg-light">
+            <a class="dropdown-item" href="./secundaria">Nivel Secundaria</a>
+            <a class="dropdown-item" href="./primaria">Nivel Primaria</a>
+            <a class="dropdown-item" href="./inicial">Nivel Inicial</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="btn-group dropup h-100 w-100">
           <button type="button" class="dropdown-toggle btn-block btn-secondary rounded-0 h-100" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false" id="menu-close2">
-            El Gartenstadt
+            aria-haspopup="true" aria-expanded="false">
+            Departamentos
           </button>
-          <div class="dropdown-menu bg-secondary mb-2">
-            <a class="dropdown-item text-white disabled" href="./vidaescolar">Vida Escolar</a>
-            <a class="dropdown-item text-white" href="./orientacion">Equipo de Orientación Escolar</a>
-            <a class="dropdown-item text-white disabled" href="./intercambios">Schüleraustausch</a>
-            <a class="dropdown-item text-white disabled" href="./veronica">Schullandheim Verónica</a>
-            <a class="dropdown-item text-white disabled" href="./serviciocomunitario">Community
-              Service</a>
-            <a class="dropdown-item text-white disabled" href="./mejorpromedio">Ehrentafel</a>
-            <a class="dropdown-item text-white disabled" href="./aulas-digitales">Aulas Digitales:
-              Educational Technology</a>
+          <div class="dropdown-menu bg-secondary">
+            <a class="dropdown-item text-white" href="./deutsch">Dpto. de Alemán</a>
+            <a class="dropdown-item text-white" href="./english">Dpto. de Inglés</a>
+            <a class="dropdown-item text-white" href="./musica">Dpto. de Música</a>
+            <a class="dropdown-item text-white" href="./educacionfisica">Dpto. de Educación Física</a>
+            <a class="dropdown-item text-white" href="./informatica">Dpto. de Informática</a>
           </div>
         </div>
       </div>
       <div class="col">
         <div class="btn-group dropup h-100 w-100">
           <button type="button" class="dropdown-toggle btn-block btn-warning text-white rounded-0 h-100"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="menu-close3">
+            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Eventos
           </button>
-          <div class="dropdown-menu bg-warning mb-2">
-            <a class="dropdown-item text-white disabled" href="./concerts">English Concerts</a>
+          <div class="dropdown-menu bg-warning">
+            <a class="dropdown-item text-white disabled" href="./concerts">Concert</a>
             <a class="dropdown-item text-white disabled" href="./expresarte">Expresarte</a>
-            <a class="dropdown-item text-white disabled" href="./expresarte">Familienfest</a>
+            <a class="dropdown-item text-white disabled" href="./expresarte">Familien Fest</a>
             <a class="dropdown-item text-white disabled" href="./expoalemania">Expoalemania</a>
+            <a class="dropdown-item text-white disabled" href="./musikal">Musischestreffen</a>
           </div>
         </div>
       </div>
@@ -902,7 +773,7 @@
               </div>
             </div>
           </li>
-          <li><a class="btn btn-gart" href="./Tour">Tour 360! <span class="badge badge-danger">Nuevo</span></a></li>
+          <li><a class="btn btn-gart" href="./Tour">Tour 360</a></li>
         </ul>
       </div>
       <div class="col-sm-3 offset-sm-1 ml-auto my-auto text-right align-self-center">
@@ -1002,7 +873,7 @@
     </div>
   </div>
 
-    <!-- Modal Streaming 
+  <!-- Modal Streaming 
 
     <div class="modal fade" id="modalStreaming" tabIndex="-1" role="dialog" aria-labelledby="modalStreaming" aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered modal-md" role="document">
@@ -1113,7 +984,7 @@
   </script>
 
   <!-- Boton que desliza menú -->
-  <script>
+  <!-- <script>
     document.getElementById('btn-2').addEventListener("click", deslizar);
 
     function deslizar() {
@@ -1138,8 +1009,10 @@
       document.getElementById('btn-2').removeEventListener("click", cerrar);
       document.getElementById('btn-2').addEventListener("click", deslizar);
     }
+  </script> -->
+  <script>
+    $('#modalStreaming').modal('show')
   </script>
-  <script>$('#modalStreaming').modal('show') </script>
 </body>
 
 </html>
