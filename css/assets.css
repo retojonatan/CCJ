@@ -79,7 +79,7 @@ a:hover {
 
 #landing .landing-title {
     display: block;
-    font-size: 100px;
+    font-size: 5rem;
     font-weight: bolder;
     margin-bottom: 0;
 }
@@ -263,7 +263,7 @@ a:hover {
 }
 
 .title-caption {
-    bottom: 7vh;
+    bottom: 9vh;
     min-height: 60px;
     text-align: center;
     color: white;
@@ -272,16 +272,18 @@ a:hover {
     font-weight: 200;
     width: 100%;
     z-index: 2;
+    display: block;
 }
 
 .caption {
-    bottom: 2vh;
-    min-height: 60px;
+    bottom: 2.5vh;
+    min-height: 65px;
     text-align: center;
     color: white;
     position: absolute;
     width: 100%;
     z-index: 2;
+    line-height: 1;
 }
 
 .solo-caption {
@@ -351,6 +353,14 @@ a:hover {
         font-weight: 100;
     }
 
+    .title-caption {
+        bottom: 11vh;
+    }
+
+    .caption {
+        font-size: 1.25em;
+    }
+
     .contenedor {
         padding: 70px;
     }
@@ -387,6 +397,10 @@ a:hover {
 
     .btn-horario {
         font-size: 1rem;
+    }
+
+    #landing .landing-title {
+        font-size: 4.5rem;
     }
 }
 
@@ -441,6 +455,10 @@ a:hover {
 
     #title-cards .p-5 {
         padding: 50px 0 !important;
+    }
+
+    #landing .landing-title {
+        font-size: 3.25rem;
     }
 
     .cards-m,
