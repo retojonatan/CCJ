@@ -84,7 +84,31 @@ router.get("/ActoSecundaria", function (req, res) {
 // operaciones de formularios del colegio
 router.post("/OperacionFormulario/MensajeAyuda", async (req, res) => {
   const { nombre, email, mensaje } = req.body;
-  if (false) {
+  if (nombre && email && mensaje) {
+    contentHtml = `
+    <h4>Este es un mensaje autogenerado por el formulario de consultas, a continuacion se detallan los datos del mismo:</h4>
+    <p>Nombre: ${nombre}</p>
+	  <p>Correo: ${email}</p>
+    <p>Mensaje: ${mensaje}</p>
+    `
+    asunto = "Consulta - "+ nombre;
+	
+    const transporter = nodemailer.createTransport({
+      host: 'smtp.gmail.com',
+      port: 465,
+      secure: true,
+      auth: {
+        user: 'web-form@colegiociudadjardin.edu.ar',
+        pass: 'Cora@2020'
+      }
+    });
+
+    const info = await transporter.sendMail({
+      from: 'web-form@colegiociudadjardin.edu.ar',
+      to: 'administracion@colegiociudadjardin.edu.ar',
+      subject: asunto,
+      html: contentHtml
+    });
     res.json({
       success: true,
     });
@@ -110,41 +134,48 @@ router.post("/OperacionFormulario/RegistroAdmision", async (req, res) => {
     mail,
     mensaje,
   } = req.body;
-
-  if (false) {
+  if (nombreApellido && mail && edad) {
     contentHtml = `
-    <h4>Este es un mensaje autogenerado por el formulario de la web, a continuacion se detallan los datos del mismo:</h4>
-    <p>Nombre: ${nombre}</p>
-    <p>Correo: ${email}</p>
-    <p>Asunto: ${asunto}</p>
-    `;
-
+    <h4>Este es un mensaje autogenerado por el formulario de admisiones, a continuacion se detallan los datos del mismo:</h4>
+    <p>Nombre del alumno entrante: ${nombreApellido}</p>
+	<p>Edad: ${edad}</p>
+	<p>Nivel educativo: ${nivelEducativo}</p>
+	<p>Institución proveniente: ${institucionProveniente}</p>
+	<p>Nombre del Padre: ${nombrePadre +' '+ apellidoPadre}</p>
+	<p>Nombre de la Madre: ${nombreMadre +' '+ apellidoMadre}</p>
+	<p>Dirección: ${direccion}</p>
+	<p>telefono: ${telefono}</p>
+	<p>Correo: ${mail}</p>
+    <p>Porque eligieron la institución: ${mensaje}</p>
+    `
+	asunto = "Formulario Admisión - "+ nombreApellido;
+	
     const transporter = nodemailer.createTransport({
-      host: "mail.ccj.edu.ar",
+      host: 'smtp.gmail.com',
       port: 465,
       secure: true,
       auth: {
-        user: "mail-form@ccj.edu.ar",
-        pass: "xxxxxx",
-      },
+        user: 'web-form@colegiociudadjardin.edu.ar',
+        pass: 'Cora@2020'
+      }
     });
 
     const info = await transporter.sendMail({
-      from: "mail-form@ccj.edu.ar",
-      to: "mail-form@ccj.edu.ar",
-      subject: "Formulario Admisiones",
-      html: contentHtml,
+      from: 'web-form@colegiociudadjardin.edu.ar',
+      to: 'admisiones@colegiociudadjardin.edu.ar',
+      subject: asunto,
+      html: contentHtml
     });
 
-    console.log("Mensaje enviado", info);
     res.json({
-      success: true,
+      success: true
     });
   } else {
     res.json({
-      success: false,
+      success: false
     });
   }
-});
+})
+
 
 module.exports = router;
