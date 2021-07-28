@@ -191,6 +191,7 @@ router.post("/landing/matricula", async (req, res) => {
       cual,
       red,
     } = data;
+
     const datos = {
       nombreApellido,
       nivelEducativo,
@@ -207,6 +208,7 @@ router.post("/landing/matricula", async (req, res) => {
       como,
       cual,
     };
+
     const matriculado = new Matriculado({
       red,
       datos,
@@ -214,6 +216,13 @@ router.post("/landing/matricula", async (req, res) => {
 
     await matriculado.save();
   }
+});
+
+router.get("/mati/check/:rrss", async (req, res) => {
+  const rrss = req.params.rrss;
+  const search = rrss.charAt(0).toUpperCase() + rrss.slice(1);
+  const datos = await Matriculado.find({ red: search });
+  res.send(datos);
 });
 
 module.exports = router;
