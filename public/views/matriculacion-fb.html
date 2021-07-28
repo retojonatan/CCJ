@@ -719,6 +719,7 @@
                 $("#modalExito").modal("show");
                 fbq("track", "Registro");
               });
+
               request.fail(function (jqXHR, textStatus) {
                 document.getElementById("form-admisiones").reset();
                 $("#modalFail").modal("show");
