@@ -649,40 +649,33 @@
           />
           <script>
             function registrar() {
-              var nombreCompleto = document.getElementById("alumno").value;
-              var nivelEducativo = document.getElementById("nivel").value;
-              var edad = document.getElementById("edad").value;
-              var institucion = document.getElementById("institucion").value;
-              var nombrePadre = document.getElementById("noPadre").value;
-              var apellidoPadre = document.getElementById("apPadre").value;
-              var nombreMadre = document.getElementById("noMadre").value;
-              var apellidoMadre = document.getElementById("apMadre").value;
-              var direccion = document.getElementById("direccion").value;
-              var telefono = document.getElementById("tel").value;
-              var mail = document.getElementById("inputEmail").value;
-              var mensaje = document.getElementById("porqueGartenstadt").value;
+              const data = {
+                nombreApellido: document.getElementById("alumno").value,
+                nivelEducativo: document.getElementById("nivel").value,
+                edad: document.getElementById("edad").value,
+                institucionProveniente:
+                  document.getElementById("institucion").value,
+                nombrePadre: document.getElementById("noPadre").value,
+                apellidoPadre: document.getElementById("apPadre").value,
+                nombreMadre: document.getElementById("noMadre").value,
+                apellidoMadre: document.getElementById("apMadre").value,
+                direccion: document.getElementById("direccion").value,
+                telefono: document.getElementById("tel").value,
+                mail: document.getElementById("inputEmail").value,
+                mensaje: document.getElementById("porqueGartenstadt").value,
+                como: "Sitio Web",
+                cual: "",
+                red: "Sitio Web Gartenstadt",
+              };
 
-              var urlCompleta =
-                "https://contact.switchit.com.ar/ccj/admisiones";
+              var urlCompleta = "http://localhost:3000/landing/matricula";
+              // "https://colegiociudadjardin.edu.ar/landing/matricula";
 
               var request = $.ajax({
                 url: urlCompleta,
                 type: "POST",
                 dataType: "json",
-                data: {
-                  nombreApellido: nombreCompleto,
-                  nivelEducativo: nivelEducativo,
-                  edad: edad,
-                  institucionProveniente: institucion,
-                  nombrePadre: nombrePadre,
-                  apellidoPadre: apellidoPadre,
-                  nombreMadre: nombreMadre,
-                  apellidoMadre: apellidoMadre,
-                  direccion: direccion,
-                  telefono: telefono,
-                  mail: mail,
-                  mensaje: mensaje,
-                },
+                data,
               });
 
               request.done(function (response) {
@@ -691,18 +684,11 @@
                 fbq("track", "Registro");
               });
 
-              request.fail(function (response) {
+              request.fail(function (jqXHR, textStatus) {
                 document.getElementById("form-admisiones").reset();
-                $("#modalExito").modal("show");
-                fbq("track", "Registro");
+                $("#modalFail").modal("show");
+                fbq("track", "RegistroFallido");
               });
-              /*
-            request.fail(function (jqXHR, textStatus) {
-              console.log(response)
-              document.getElementById("form-admisiones").reset();
-              $('#modalFail').modal('show');
-              fbq('track', 'RegistroFallido');
-            })*/
             }
           </script>
         </form>
@@ -782,9 +768,7 @@
               </div>
             </li>
             <li>
-              <a class="btn btn-gart" href="/Tour"
-                >Tour 360! </a
-              >
+              <a class="btn btn-gart" href="/Tour">Tour 360 </a>
             </li>
           </ul>
         </div>
