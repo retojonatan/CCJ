@@ -2,6 +2,7 @@ const { Router } = require("express");
 const nodemailer = require("nodemailer");
 const path = require("path");
 const Matriculado = require("../models/Matriculado");
+const Consulta = require("../models/Consulta");
 
 const router = Router();
 
@@ -215,6 +216,65 @@ router.post("/landing/matricula", async (req, res) => {
     });
 
     await matriculado.save();
+  }
+});
+
+router.post("/landing/consulta", async (req, res) => {
+  const { nombre, mail, red, nivel } = req.body;
+  if (nombre && mail && nivel) {
+    const contentHtml = `
+    <h4>Este es un mensaje autogenerado por los formularios de contacto,
+    a continuación se detallan los datos del mismo:</h4>
+    <p>Nombre del contacto: ${nombre}</p>
+    <p>Correo: ${mail}</p>
+    <p>Origen del formulario: ${red}</p>
+    <p>Nivel del cual fue enviado: ${nivel}</p>
+    `;
+
+    const asunto = "Formulario de consulta - " + nombre;
+
+    const transporter = nodemailer.createTransport({
+      host: "smtp.gmail.com",
+      port: 465,
+      secure: true,
+      auth: {
+        user: process.env.CCJ_SMTP_USER,
+        pass: process.env.CCJ_SMTP_PASSWORD,
+      },
+    });
+
+    await transporter.sendMail({
+      from: "web-form@colegiociudadjardin.edu.ar",
+      to: "retojonatan@colegiociudadjardin.edu.ar",
+      subject: asunto,
+      html: contentHtml,
+    });
+
+    await grabarConsulta(req.body);
+    res.json({
+      success: true,
+    });
+  } else {
+    res.json({
+      success: false,
+    });
+  }
+
+  async function grabarConsulta(data) {
+    const { nombre, mail, red, nivel } = data;
+
+    const datos = {
+      nombre,
+      mail,
+      nivel,
+    };
+
+    const consulta = new Consulta({
+      red,
+      datos,
+    });
+
+    await consulta.save();
   }
 });
 
