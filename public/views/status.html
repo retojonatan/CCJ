@@ -525,18 +525,35 @@
           data.map((reg) => {
             datos = `
             <div class="col-3">
-            <div class="card mb-4" style="min-height:180px">
+            <div class="card mb-4" style="min-height:150px">
               <div class="card-body">
             <h5 class="card-title">Nombre: ${reg.datos.nombreApellido}</h5>
-            <p>Institución proveniente: ${
-              reg.datos.institucionProveniente
-                ? reg.datos.institucionProveniente
-                : "Sin completar"
+            ${
+              reg.red === "Google"
+                ? `<p class="t-rojo font-weight-bold">Registrado desde: ${reg.red} `
+                : ``
+            }
+            ${
+              reg.red === "Facebook"
+                ? `<p class="text-primary font-weight-bold">Registrado desde: ${reg.red} `
+                : ``
+            }
+            ${
+              reg.red === "Instagram"
+                ? `<p class="t-violeta font-weight-bold">Registrado desde: ${reg.red} `
+                : ``
+            }
+            ${
+              reg.red === "Linkedin"
+                ? `<p class="t-amarillo font-weight-bold">Registrado desde: ${reg.red} `
+                : ``
+            }
+            ${
+              reg.red === "Sitio Web Gartenstadt"
+                ? `<p class="t-verde font-weight-bold">Registrado desde: ${reg.red} `
+                : ``
             }
             </p>
-            <p>Como nos conociste: ${
-              reg.datos.como ? reg.datos.como : "Ns/Nc"
-            }${reg.datos.cual ? " - " + reg.datos.cual : ""}</p>
             </div>
             </div>
             </div>
