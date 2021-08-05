@@ -144,7 +144,7 @@ router.post("/landing/matricula", async (req, res) => {
     <p>¿Porque eligieron la institución?: ${mensaje}</p>
     <p>Origen del formulario: ${red}</p>
     `;
-    asunto = "Formulario Admisión - " + nombreApellido;
+    asunto = "Formulario de matriculación - " + nombreApellido;
 
     const transporter = nodemailer.createTransport({
       host: "smtp.gmail.com",
@@ -158,7 +158,7 @@ router.post("/landing/matricula", async (req, res) => {
 
     await transporter.sendMail({
       from: "web-form@colegiociudadjardin.edu.ar",
-      to: "retojonatan@colegiociudadjardin.edu.ar",
+      to: "admisiones@colegiociudadjardin.edu.ar",
       subject: asunto,
       html: contentHtml,
     });
@@ -220,13 +220,14 @@ router.post("/landing/matricula", async (req, res) => {
 });
 
 router.post("/landing/consulta", async (req, res) => {
-  const { nombre, mail, red, nivel } = req.body;
+  const { nombre, tel, mail, red, nivel } = req.body;
   if (nombre && mail && nivel) {
     const contentHtml = `
     <h4>Este es un mensaje autogenerado por los formularios de contacto,
     a continuación se detallan los datos del mismo:</h4>
     <p>Nombre del contacto: ${nombre}</p>
     <p>Correo: ${mail}</p>
+    <p>Telefono: ${tel}</p>
     <p>Origen del formulario: ${red}</p>
     <p>Nivel del cual fue enviado: ${nivel}</p>
     `;
@@ -245,7 +246,7 @@ router.post("/landing/consulta", async (req, res) => {
 
     await transporter.sendMail({
       from: "web-form@colegiociudadjardin.edu.ar",
-      to: "retojonatan@colegiociudadjardin.edu.ar",
+      to: "admisiones@colegiociudadjardin.edu.ar",
       subject: asunto,
       html: contentHtml,
     });
@@ -261,10 +262,11 @@ router.post("/landing/consulta", async (req, res) => {
   }
 
   async function grabarConsulta(data) {
-    const { nombre, mail, red, nivel } = data;
+    const { nombre, tel, mail, red, nivel } = data;
 
     const datos = {
       nombre,
+      tel,
       mail,
       nivel,
     };
@@ -278,11 +280,41 @@ router.post("/landing/consulta", async (req, res) => {
   }
 });
 
-router.get("/mati/check/:rrss", async (req, res) => {
-  const rrss = req.params.rrss;
-  const search = rrss.charAt(0).toUpperCase() + rrss.slice(1);
-  const datos = await Matriculado.find({ red: search });
-  res.send(datos);
+router.get("/landing/status", (req, res) => {
+  res.sendFile(ruta + "status.html");
+});
+
+router.get("/landing/status/datos", async (req, res) => {
+  const datos = await Matriculado.find(
+    {},
+    {
+      _id: 0,
+      datos: {
+        apellidoMadre: 0,
+        apellidoPadre: 0,
+        direccion: 0,
+        mail: 0,
+        mensaje: 0,
+        nombreMadre: 0,
+        nombrePadre: 0,
+        telefono: 0,
+        nivelEducativo: 0,
+        edad: 0,
+      },
+    }
+  );
+  //Comparer Function
+  function GetSortOrder(prop) {
+    return function (a, b) {
+      if (a[prop] > b[prop]) {
+        return 1;
+      } else if (a[prop] < b[prop]) {
+        return -1;
+      }
+      return 0;
+    };
+  }
+  res.send(datos.sort(GetSortOrder("red")));
 });
 
 module.exports = router;
