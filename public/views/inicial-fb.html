@@ -1029,21 +1029,30 @@
             onclick="event.stopPropagation()"
           >
             <div class="form-group" onclick="event.stopPropagation()">
+              <label for="name">Nombre</label>
               <input
                 class="form-control form-control-sm mb-2"
                 type="text"
                 id="name"
                 name="name"
-                placeholder="Ingrese su nombre"
               />
             </div>
             <div class="form-group" onclick="event.stopPropagation()">
+              <label for="tel">Teléfono</label>
+              <input
+                class="form-control form-control-sm mb-2"
+                type="text"
+                id="tel"
+                name="tel"
+              />
+            </div>
+            <div class="form-group" onclick="event.stopPropagation()">
+              <label for="mail">E-mail</label>
               <input
                 class="form-control form-control-sm mb-2"
                 type="email"
                 name="mail"
                 id="mail"
-                placeholder="Ingrese su email"
               />
             </div>
             <button class="btn btn-primary btn-block" type="submit">
@@ -1148,10 +1157,11 @@
       function mensajeContacto() {
         var nombre = document.getElementById("name").value;
         var mail = document.getElementById("mail").value;
+        var tel = document.getElementById("tel").value;
         var nivel = "Inicial";
         var red = "Facebook";
 
-        var urlCompleta = "https://v2.colegiociudadjardin.edu.ar/landing/consulta";
+        var urlCompleta = "https://colegiociudadjardin.edu.ar/landing/consulta";
 
         var request = $.ajax({
           url: urlCompleta,
@@ -1159,6 +1169,7 @@
           dataType: "json",
           data: {
             nombre,
+            tel,
             mail,
             red,
             nivel,
