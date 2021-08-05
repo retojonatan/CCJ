@@ -566,6 +566,10 @@ a.c-celeste:hover {
   margin-bottom: 5vh !important;
 }
 
+#contacto h5 {
+  font-size: 1.25rem;
+}
+
 #contact-msj {
   border-right: 2px solid #ccc;
 }
