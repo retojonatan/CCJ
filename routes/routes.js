@@ -246,7 +246,7 @@ router.post("/landing/consulta", async (req, res) => {
 
     await transporter.sendMail({
       from: "web-form@colegiociudadjardin.edu.ar",
-      to: "admisiones@colegiociudadjardin.edu.ar",
+      to: "admision@colegiociudadjardin.edu.ar",
       subject: asunto,
       html: contentHtml,
     });
