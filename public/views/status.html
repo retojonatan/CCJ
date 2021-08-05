@@ -525,36 +525,36 @@
           data.map((reg) => {
             datos = `
             <div class="col-xs-12 col-md-3">
-            <div class="card mb-4" style="min-height:150px">
+            <div class="card mb-4" style="min-height:185px">
               <div class="card-body">
             <h5 class="card-title">${reg.datos.nombreApellido}</h5>
             ${
               reg.red === "Google"
-                ? `<p class="t-rojo font-weight-bold">Registrado desde: </br>${reg.red} `
+                ? `<p class="t-rojo font-weight-bold mb-1">Registrado desde: </br>${reg.red} `
                 : ``
             }
             ${
               reg.red === "Facebook"
-                ? `<p class="text-primary font-weight-bold">Registrado desde: </br>${reg.red} `
+                ? `<p class="text-primary font-weight-bold mb-1">Registrado desde: </br>${reg.red} `
                 : ``
             }
             ${
               reg.red === "Instagram"
-                ? `<p class="t-violeta font-weight-bold">Registrado desde: </br>${reg.red} `
+                ? `<p class="t-violeta font-weight-bold mb-1">Registrado desde: </br>${reg.red} `
                 : ``
             }
             ${
               reg.red === "Linkedin"
-                ? `<p class="t-amarillo font-weight-bold">Registrado desde: </br>${reg.red} `
+                ? `<p class="t-amarillo font-weight-bold mb-1">Registrado desde: </br>${reg.red} `
                 : ``
             }
             ${
               reg.red === "Sitio Web Gartenstadt"
-                ? `<p class="t-verde font-weight-bold">Registrado desde: </br>${reg.red} `
+                ? `<p class="t-verde font-weight-bold mb-1">Registrado desde: </br>${reg.red} `
                 : ``
             }
             </p>
-            <p>Como nos conociste: </br>${
+            <p class="mb-1">Como nos conociste: </br>${
               reg.datos.como ? reg.datos.como : "no especificado"
             }</p>
             </div>
